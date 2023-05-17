@@ -27,7 +27,7 @@ for page in pages:
 # write to file
 with open(f"Reviews/{subject}_reviews.txt", "w", encoding="utf-8") as f:
     for review in reviews:
-        f.write(str(review))
+        f.write('*: '+ review[0].text)
         f.write("\n")
 
 
