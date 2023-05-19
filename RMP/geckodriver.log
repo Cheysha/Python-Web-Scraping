@@ -7116,3 +7116,525 @@ JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error:
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1684456056267	geckodriver	INFO	Listening on 127.0.0.1:51073
+1684456059288	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51074" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hyman\\AppData\\Local\\Temp\\rust_mozprofileTbUszg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684456060000	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1684456060010	Marionette	INFO	Listening on port 51083
+Read port: 51083
+WebDriver BiDi listening on ws://127.0.0.1:51074
+1684456060234	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:51074/devtools/browser/8b38d6c3-f707-4168-9a86-aa057a962de1
+JavaScript error: https://cdn.browsiprod.com/sd/apps/middy/middy-desktop-4.15.15.js, line 1: TypeError: document.body is null
+JavaScript error: https://cdn.browsiprod.com/sd/apps/middy/middy-desktop-4.15.15.js, line 1: TypeError: document.body is null
+JavaScript warning: https://www.ratemyprofessors.com/search/teachers?query=*&sid=946 line 1 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684456077140	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+1684456082408	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3462 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.js7k.com/rq/iv/inside-20.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/08cn5b8EVMSc5l6e1YWDk0jg24yFrQ2cZ845B_qPECM.js line 2 > eval line 1531 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684456089004	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6765 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684456113243	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4744 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684456129256	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+[Parent 324, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:787
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684456132472	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/08cn5b8EVMSc5l6e1YWDk0jg24yFrQ2cZ845B_qPECM.js line 2 > eval line 5019 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684456137523	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1684456137587	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1684456137622	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5434 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 648 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684456143834	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 306 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Missing chrome or resource URL: chrome://browser/skin/aboutSessionRestore-window-icon.png
+Missing chrome or resource URL: chrome://browser/skin/abyss/img/waterfox-abyss-preview.svg
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684456171995	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://www.ratemyprofessors.com/search/teachers?query=*&sid=946 line 1 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684456177712	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6676 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684456183331	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1684456183932	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5803 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+JavaScript error: https://cdn.doubleverify.com/dv-measurements3783.js, line 1: TypeError: c.WindowAdaptor.workingDocument() is undefined
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+JavaScript error: https://cdn.doubleverify.com/dv-measurements3783.js, line 1: TypeError: c.WindowAdaptor.workingDocument() is undefined
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+JavaScript error: https://cdn.doubleverify.com/dv-measurements3783.js, line 1: TypeError: c.WindowAdaptor.workingDocument() is undefined
+JavaScript error: https://cdn.doubleverify.com/dv-measurements3783.js, line 1: TypeError: c.WindowAdaptor.workingDocument() is undefined
+[Child 2212, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1684456203111	Marionette	INFO	Stopped listening on port 51083
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 324, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:593
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 324, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:787
+1684501575888	geckodriver	INFO	Listening on 127.0.0.1:64646
+1684501578935	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64647" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hyman\\AppData\\Local\\Temp\\rust_mozprofileuFPTpV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684501579235	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1684501579241	Marionette	INFO	Listening on port 64655
+Read port: 64655
+WebDriver BiDi listening on ws://127.0.0.1:64647
+1684501579365	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:64647/devtools/browser/768cef78-d677-43ea-82b5-208cf3741f17
+1684501583227	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1684501585222	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6608 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2133 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 17208, MediaDecoderStateMachine #1] WARNING: 203a7a45790 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4591 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6770 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6524 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684501592043	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 17208, MediaDecoderStateMachine #1] WARNING: Decoder=203b2252a00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 17208, MediaDecoderStateMachine #1] WARNING: Decoder=203b2252a00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(mozilla::ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:164
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5521 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3227 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7112 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2448 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7805 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2403 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdn.taboola.com/libtrc/impl.20230517-3-RELEASE.js, line 19: TypeError: a.target.getAttribute(...) is null
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 5412, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+JavaScript error: https://cdn.doubleverify.com/dv-measurements3783.js, line 1: TypeError: c.WindowAdaptor.workingDocument() is undefined
+1684501619528	Marionette	INFO	Stopped listening on port 64655
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:859:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:799:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:237:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:824:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1684501664077	geckodriver	INFO	Listening on 127.0.0.1:49756
+1684501667155	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49757" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hyman\\AppData\\Local\\Temp\\rust_mozprofileeSFGc8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684501667433	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1684501667438	Marionette	INFO	Listening on port 49765
+Read port: 49765
+WebDriver BiDi listening on ws://127.0.0.1:49757
+1684501667542	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:49757/devtools/browser/9c51e10c-c31f-4d32-b4f3-064a64b58620
+1684501671075	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://z.moatads.com/teads245638586802/moatvideo.js#_moatApi56561806, line 272: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7792 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4917 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684501676104	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1684501679559	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 508 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 16792, MediaDecoderStateMachine #1] WARNING: 24749f6d8a0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+1684501680245	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5816 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: javascript:void;, line 1: SyntaxError: expected expression, got ';'
+JavaScript error: https://cdn.lamp.avct.cloud/vpaid.js?aid=641c68d71f864d6fddec6de2&mid=641c69071f864d6fddec6de4&tid=642c4c571f864d6fddec6e33-22&mt=video&vastUrl=https%3A%2F%2Fvast.doubleverify.com%2Fv3%2Fvast%3F_media%3D3%26ctx%3D607671%26cmp%3D29693757%26sid%3D5396893%26plc%3D363297992%26adsrv%3D166%26blk%3D1%26psf%3D1%26_vast%3Dhttps://ad.doubleclick.net/ddm/pfadx/N424004.3593787DV360AAAZA/B29693757.363297992%3Bsz%3D0x0%3Bu%3D__AP1_db_dv_ABAjH0gzj4COUaz_mqJ10pZn48VnPA___19879508588%3Bkw%3D19879508588%3Bord%3D%5Btimestamp%5D%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bdcmt%3Dtext/xml%3Bdc_ref%3Dhttps://www.ratemyprofessors.com%3Bdc_vast%3D3%3Fves%3DdGltZXN0YW1wOiAxNjg0NTAxNjg0NzgyCmNsaWNrX3Rocm91Z2hfdXJsOiAiaHR0cHM6Ly9hZGNsaWNrLmcuZG91YmxlY2xpY2submV0L3Bjcy9jbGljaz94YWk9QUtBT2pzdE5OX0p1eWdkbkVLU0FMa29qQ1B1UXd6X2NHX1duQVlZazQyb1pMdzlxZGpwbi1NSzM5bTFnVlZrMGdVVVFQMk4zMjlJR1M2TkgtQ3NOa2d2RjROaXMwNURwOGxXbEVCa2pxLTk5RXVEaE9mZDlYWl9zVC1hQjlVQ0Z0YVhNUkdZbzhFRXRXdThaUnZZeHQ1UTA5OWdQcWlNSDNtajRDZU9UV1RubW9yMC1vWUlURWNuNXh5bzVDSDVMWkhvNW15ZjVLQUlGR0JIR05EdDBlb3RCQnhtRzF1MzlycXJuaFJTcTU2c2RuT1RHXy00NU5USlBFX3Q3OGdwVG9ZN0daT3lxdTdZWDc3TmgxajF6QUg0UVpjVlJqTHpSN2xIU3ZtS1VWVHJEVENucVZ0Q1k4NHA2SkxfZmlTczhaVEM2YUFBS3EteFJoUFEtTEtibDRlTjJpbWpxTVZWRGtidGNYVzRfNHpaRmtQY0hvOS1yZUZwMDRfM0JJbHpzVGRMVHB4MzlKUjc4dGpFekFwcHRZOXJKNVZiZWRCelVnczQxWW83Wmhxc3AwQkVOQkRoellrS3VMWXp0S21CamtocFQzMzVsNDctVFA5Rkk3TUdFQXR4VnVtY1N1WmM5b2pfT0w3U1d6Q2xBQUl1aTN0YnM1XzNNSlBVOFM5clFaTnZ2eS1nLS1MYnlWTXlHVTJYamw5OUV4TkJzUTUzbWdldFUzWDNiRkc1YVROYmdDMktxcTRuM0drSEtUWklicE5HZlYwcGl2UTgwZFpiMXlWY2p5aVNydWNoamdVR0FoQW1fOXV6WXdTQVZ3TXMteEhHVVc1bEtXZWo0dnpXSXpWb1J1Q2NKNFVvQlBUd3dfb3c3bWUwM0ZLeUlIcVN0T0dWMXVpWmROSndRMFJfRHFZdkl6blE5c2Z4VURiTGtZay11VEtqaE4xWld6cnJjcGRHS0IxVXd2U1dxX3l3LV9ONkpjd214SmdwWjZMY3NnSGx0Y0EyT2dRSVVLcWlkZ2pxUnNlMVlFX0hwTVdZWjN2S3Y5X2diRHpSUTU2ckQzVVJKaTUzdHFuSkcwSEdPb0RQbFVDLUtwTG5YVTIwMlIwYmQtcGEwOTVqdmYwZ21ObXgwY2pRQklMTmZJU3lIVzVjWjUtbV9VTEN3YWJWeUJReU0waUhMclVmVHBmQmZ2blR2VmdMUHdEb0lhWHFZT0k0SHVpT05HV3hBRDYzOTFxZG5WbmVid0dCOWZTMXpSVXBPSXhkckV1MC1ZWFN6cGdPMVZfemI0OXl2YmVzNEo0bHdMRXBWYklzbXdXdXlJNG1vVHh3S3U4STBNVGVqNHg2QzcwNTZvWTQ2SW01Nk5aTW5DSS1qaDV0aEx1TXdjVlBMemVfUUxNSk15bS1CUk5feE5BOW5OUFR6VHg1UFlwblhHTlJIVnkwTmNnVUE3NlJDMFpJS3VUUGplNjNGZ0M3eDhQTlpnQy1QRWM1aG1XM0hoanR0aF9qRmJnb3ZzalhvRGRIR2haakNFZnJlVHU1dDA1Q2huSFczeFZ0UzUzVV9jRzhTSmpRZnlUanYxb1dZSTdDMGRXbVVPYnF5Tjd4SVN5ZFBlUUlJN2hwdGRsRkF6WkdCaWZ5NDFoNU5LRjRzeFBkY1dIZ3k3T2hVRm1lZXhfRXdfYTdpMnQ5dHZteWEyWTk4azRVMDFOd1oycXpnNXBybTFvNlFmTFQ2S09IOXlPVW4tQ3FULXNPNUFaQ2tiOVlNN3lUbmFKbVdabTRnUHFjbU1DMmZIS1dPNU1WQnhFcHpnYWVxVmVyVGZ0T29wUU5jN3g5VE9WOEJtQzhJc3VuRGktNnlfbFJLU1pTR1RsRTZTcWRlb0RVMCZzYWk9QU1mbC1ZUnFqWVM1cVdBWXVkTmdaTVFHV3hIZzhBY2xzNkdDMXN0Vm4tdVhLMmc4X0kzT19ac1UwOExqcW1CRC12SjN2UkFzZ1h0SFZMcl85VHJ0eDdOLURTdzdnUmFYaDhjeE56Ym5IN0hLYmY4enotdXhMYWRRUmhkVHJIQTh6SEJnXzBDZ1hkRVdhdG5nUmdZaEdZZ2UtYnpGYnhETGdLZFRxSUlaX0ZvclFoNUhDdkI4SWVBZ1FnTndFTGFGdXFQUHFJcmVMWUx2VXNGUk5ZNm1TVVRVeHBxS2hpc2R4OHRwTUtuOFg4Q3lDbnM4X1VLeVhBJnNpZz1DZzBBcktKU3pCM1ljaEhnMUVpbUVBRSZjcnk9MSZmYnNfYWVpZD1bZ3dfZmJzYWVpZF0mdXJsZml4PTEmYWR1cmw9aHR0cHM6Ly9kLmFna24uY29tL3BpeGVsLzIzODkvJTNGY2hlJTNEMjEzODI5MTA3NyUyNmNvbCUzRDI5NjkzNzU3LDUzOTY4OTMsMzYzMjk3OTkyLDU1NDQ3ODkwNywxOTExOTkzMDklMjZsMSUzRGh0dHBzOi8vd3d3LmF0dC5jb20vY29ubmVjdHRvY2hhbmdlLyUzRnNvdXJjZSUzREVDRTIwMDAwMDAwYXRwMDBPJTI2Y20zNjAlM0Q2MTQyMzI4XzI5NjkzNzU3XzUzOTY4OTNfMzYzMjk3OTkyXzU1NDQ3ODkwNyUyNmRjbGlkJTNEJTI1ZWRjbGlkISIK%26dc_cid%3D191199309%26dc_adid%3D554478907%26aufilter1%3D1451932%26prr%3D1%26ppid%3D103%26autt%3D4%26auevent%3DABAjH0gzj4COUaz_mqJ10pZn48Vn%26c1%3D1451932%26auorder%3D1011203560%26aucmp%3D19879508588%26aucrtv%3D480884023%26pltfrm%3D10%26ausite%3D3402310441%26turl%3Dhttps://www.ratemyprofessors.com%26aubndl%3D%26_api%3D2,7,8%26_ssm%3D0%26_tsm%3D2023-05-19T13%3A08%3A06.141Z%26_abm%3D-1%26_pum%3Dhttps%3A%2F%2Fwww.ratemyprofessors.com%2Fprofessor%2F13339&imageUrl=https%3A%2F%2Ftag.researchnow.com%2Ft%2Fbeacon%3Fpr%3D288195%26adn%3D1%26ca%3D29693757%26si%3Dst_c8f0792f%26pl%3D363297992%26cr%3D363297992%26did%3DAdvertiserId%26ord%3DCacheBuster%26us_privacy%3D%24{US_PRIVACY}%26eid%3D{EVENT_ID}&duration=15000, line 1: TypeError: this.creative is undefined
+JavaScript error: https://cdn.lamp.avct.cloud/vpaid.js?aid=641c68d71f864d6fddec6de2&mid=641c69071f864d6fddec6de4&tid=642c4c571f864d6fddec6e33-22&mt=video&vastUrl=https%3A%2F%2Fvast.doubleverify.com%2Fv3%2Fvast%3F_media%3D3%26ctx%3D607671%26cmp%3D29693757%26sid%3D5396893%26plc%3D363297992%26adsrv%3D166%26blk%3D1%26psf%3D1%26_vast%3Dhttps://ad.doubleclick.net/ddm/pfadx/N424004.3593787DV360AAAZA/B29693757.363297992%3Bsz%3D0x0%3Bu%3D__AP1_db_dv_ABAjH0gzj4COUaz_mqJ10pZn48VnPA___19879508588%3Bkw%3D19879508588%3Bord%3D%5Btimestamp%5D%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bdcmt%3Dtext/xml%3Bdc_ref%3Dhttps://www.ratemyprofessors.com%3Bdc_vast%3D3%3Fves%3DdGltZXN0YW1wOiAxNjg0NTAxNjg0NzgyCmNsaWNrX3Rocm91Z2hfdXJsOiAiaHR0cHM6Ly9hZGNsaWNrLmcuZG91YmxlY2xpY2submV0L3Bjcy9jbGljaz94YWk9QUtBT2pzdE5OX0p1eWdkbkVLU0FMa29qQ1B1UXd6X2NHX1duQVlZazQyb1pMdzlxZGpwbi1NSzM5bTFnVlZrMGdVVVFQMk4zMjlJR1M2TkgtQ3NOa2d2RjROaXMwNURwOGxXbEVCa2pxLTk5RXVEaE9mZDlYWl9zVC1hQjlVQ0Z0YVhNUkdZbzhFRXRXdThaUnZZeHQ1UTA5OWdQcWlNSDNtajRDZU9UV1RubW9yMC1vWUlURWNuNXh5bzVDSDVMWkhvNW15ZjVLQUlGR0JIR05EdDBlb3RCQnhtRzF1MzlycXJuaFJTcTU2c2RuT1RHXy00NU5USlBFX3Q3OGdwVG9ZN0daT3lxdTdZWDc3TmgxajF6QUg0UVpjVlJqTHpSN2xIU3ZtS1VWVHJEVENucVZ0Q1k4NHA2SkxfZmlTczhaVEM2YUFBS3EteFJoUFEtTEtibDRlTjJpbWpxTVZWRGtidGNYVzRfNHpaRmtQY0hvOS1yZUZwMDRfM0JJbHpzVGRMVHB4MzlKUjc4dGpFekFwcHRZOXJKNVZiZWRCelVnczQxWW83Wmhxc3AwQkVOQkRoellrS3VMWXp0S21CamtocFQzMzVsNDctVFA5Rkk3TUdFQXR4VnVtY1N1WmM5b2pfT0w3U1d6Q2xBQUl1aTN0YnM1XzNNSlBVOFM5clFaTnZ2eS1nLS1MYnlWTXlHVTJYamw5OUV4TkJzUTUzbWdldFUzWDNiRkc1YVROYmdDMktxcTRuM0drSEtUWklicE5HZlYwcGl2UTgwZFpiMXlWY2p5aVNydWNoamdVR0FoQW1fOXV6WXdTQVZ3TXMteEhHVVc1bEtXZWo0dnpXSXpWb1J1Q2NKNFVvQlBUd3dfb3c3bWUwM0ZLeUlIcVN0T0dWMXVpWmROSndRMFJfRHFZdkl6blE5c2Z4VURiTGtZay11VEtqaE4xWld6cnJjcGRHS0IxVXd2U1dxX3l3LV9ONkpjd214SmdwWjZMY3NnSGx0Y0EyT2dRSVVLcWlkZ2pxUnNlMVlFX0hwTVdZWjN2S3Y5X2diRHpSUTU2ckQzVVJKaTUzdHFuSkcwSEdPb0RQbFVDLUtwTG5YVTIwMlIwYmQtcGEwOTVqdmYwZ21ObXgwY2pRQklMTmZJU3lIVzVjWjUtbV9VTEN3YWJWeUJReU0waUhMclVmVHBmQmZ2blR2VmdMUHdEb0lhWHFZT0k0SHVpT05HV3hBRDYzOTFxZG5WbmVid0dCOWZTMXpSVXBPSXhkckV1MC1ZWFN6cGdPMVZfemI0OXl2YmVzNEo0bHdMRXBWYklzbXdXdXlJNG1vVHh3S3U4STBNVGVqNHg2QzcwNTZvWTQ2SW01Nk5aTW5DSS1qaDV0aEx1TXdjVlBMemVfUUxNSk15bS1CUk5feE5BOW5OUFR6VHg1UFlwblhHTlJIVnkwTmNnVUE3NlJDMFpJS3VUUGplNjNGZ0M3eDhQTlpnQy1QRWM1aG1XM0hoanR0aF9qRmJnb3ZzalhvRGRIR2haakNFZnJlVHU1dDA1Q2huSFczeFZ0UzUzVV9jRzhTSmpRZnlUanYxb1dZSTdDMGRXbVVPYnF5Tjd4SVN5ZFBlUUlJN2hwdGRsRkF6WkdCaWZ5NDFoNU5LRjRzeFBkY1dIZ3k3T2hVRm1lZXhfRXdfYTdpMnQ5dHZteWEyWTk4azRVMDFOd1oycXpnNXBybTFvNlFmTFQ2S09IOXlPVW4tQ3FULXNPNUFaQ2tiOVlNN3lUbmFKbVdabTRnUHFjbU1DMmZIS1dPNU1WQnhFcHpnYWVxVmVyVGZ0T29wUU5jN3g5VE9WOEJtQzhJc3VuRGktNnlfbFJLU1pTR1RsRTZTcWRlb0RVMCZzYWk9QU1mbC1ZUnFqWVM1cVdBWXVkTmdaTVFHV3hIZzhBY2xzNkdDMXN0Vm4tdVhLMmc4X0kzT19ac1UwOExqcW1CRC12SjN2UkFzZ1h0SFZMcl85VHJ0eDdOLURTdzdnUmFYaDhjeE56Ym5IN0hLYmY4enotdXhMYWRRUmhkVHJIQTh6SEJnXzBDZ1hkRVdhdG5nUmdZaEdZZ2UtYnpGYnhETGdLZFRxSUlaX0ZvclFoNUhDdkI4SWVBZ1FnTndFTGFGdXFQUHFJcmVMWUx2VXNGUk5ZNm1TVVRVeHBxS2hpc2R4OHRwTUtuOFg4Q3lDbnM4X1VLeVhBJnNpZz1DZzBBcktKU3pCM1ljaEhnMUVpbUVBRSZjcnk9MSZmYnNfYWVpZD1bZ3dfZmJzYWVpZF0mdXJsZml4PTEmYWR1cmw9aHR0cHM6Ly9kLmFna24uY29tL3BpeGVsLzIzODkvJTNGY2hlJTNEMjEzODI5MTA3NyUyNmNvbCUzRDI5NjkzNzU3LDUzOTY4OTMsMzYzMjk3OTkyLDU1NDQ3ODkwNywxOTExOTkzMDklMjZsMSUzRGh0dHBzOi8vd3d3LmF0dC5jb20vY29ubmVjdHRvY2hhbmdlLyUzRnNvdXJjZSUzREVDRTIwMDAwMDAwYXRwMDBPJTI2Y20zNjAlM0Q2MTQyMzI4XzI5NjkzNzU3XzUzOTY4OTNfMzYzMjk3OTkyXzU1NDQ3ODkwNyUyNmRjbGlkJTNEJTI1ZWRjbGlkISIK%26dc_cid%3D191199309%26dc_adid%3D554478907%26aufilter1%3D1451932%26prr%3D1%26ppid%3D103%26autt%3D4%26auevent%3DABAjH0gzj4COUaz_mqJ10pZn48Vn%26c1%3D1451932%26auorder%3D1011203560%26aucmp%3D19879508588%26aucrtv%3D480884023%26pltfrm%3D10%26ausite%3D3402310441%26turl%3Dhttps://www.ratemyprofessors.com%26aubndl%3D%26_api%3D2,7,8%26_ssm%3D0%26_tsm%3D2023-05-19T13%3A08%3A06.141Z%26_abm%3D-1%26_pum%3Dhttps%3A%2F%2Fwww.ratemyprofessors.com%2Fprofessor%2F13339&imageUrl=https%3A%2F%2Ftag.researchnow.com%2Ft%2Fbeacon%3Fpr%3D288195%26adn%3D1%26ca%3D29693757%26si%3Dst_c8f0792f%26pl%3D363297992%26cr%3D363297992%26did%3DAdvertiserId%26ord%3DCacheBuster%26us_privacy%3D%24{US_PRIVACY}%26eid%3D{EVENT_ID}&duration=15000, line 1: TypeError: this.creative is undefined
+JavaScript error: https://cdn.lamp.avct.cloud/vpaid.js?aid=641c68d71f864d6fddec6de2&mid=641c69071f864d6fddec6de4&tid=642c4c571f864d6fddec6e33-22&mt=video&vastUrl=https%3A%2F%2Fvast.doubleverify.com%2Fv3%2Fvast%3F_media%3D3%26ctx%3D607671%26cmp%3D29693757%26sid%3D5396893%26plc%3D363297992%26adsrv%3D166%26blk%3D1%26psf%3D1%26_vast%3Dhttps://ad.doubleclick.net/ddm/pfadx/N424004.3593787DV360AAAZA/B29693757.363297992%3Bsz%3D0x0%3Bu%3D__AP1_db_dv_ABAjH0gzj4COUaz_mqJ10pZn48VnPA___19879508588%3Bkw%3D19879508588%3Bord%3D%5Btimestamp%5D%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bdcmt%3Dtext/xml%3Bdc_ref%3Dhttps://www.ratemyprofessors.com%3Bdc_vast%3D3%3Fves%3DdGltZXN0YW1wOiAxNjg0NTAxNjg0NzgyCmNsaWNrX3Rocm91Z2hfdXJsOiAiaHR0cHM6Ly9hZGNsaWNrLmcuZG91YmxlY2xpY2submV0L3Bjcy9jbGljaz94YWk9QUtBT2pzdE5OX0p1eWdkbkVLU0FMa29qQ1B1UXd6X2NHX1duQVlZazQyb1pMdzlxZGpwbi1NSzM5bTFnVlZrMGdVVVFQMk4zMjlJR1M2TkgtQ3NOa2d2RjROaXMwNURwOGxXbEVCa2pxLTk5RXVEaE9mZDlYWl9zVC1hQjlVQ0Z0YVhNUkdZbzhFRXRXdThaUnZZeHQ1UTA5OWdQcWlNSDNtajRDZU9UV1RubW9yMC1vWUlURWNuNXh5bzVDSDVMWkhvNW15ZjVLQUlGR0JIR05EdDBlb3RCQnhtRzF1MzlycXJuaFJTcTU2c2RuT1RHXy00NU5USlBFX3Q3OGdwVG9ZN0daT3lxdTdZWDc3TmgxajF6QUg0UVpjVlJqTHpSN2xIU3ZtS1VWVHJEVENucVZ0Q1k4NHA2SkxfZmlTczhaVEM2YUFBS3EteFJoUFEtTEtibDRlTjJpbWpxTVZWRGtidGNYVzRfNHpaRmtQY0hvOS1yZUZwMDRfM0JJbHpzVGRMVHB4MzlKUjc4dGpFekFwcHRZOXJKNVZiZWRCelVnczQxWW83Wmhxc3AwQkVOQkRoellrS3VMWXp0S21CamtocFQzMzVsNDctVFA5Rkk3TUdFQXR4VnVtY1N1WmM5b2pfT0w3U1d6Q2xBQUl1aTN0YnM1XzNNSlBVOFM5clFaTnZ2eS1nLS1MYnlWTXlHVTJYamw5OUV4TkJzUTUzbWdldFUzWDNiRkc1YVROYmdDMktxcTRuM0drSEtUWklicE5HZlYwcGl2UTgwZFpiMXlWY2p5aVNydWNoamdVR0FoQW1fOXV6WXdTQVZ3TXMteEhHVVc1bEtXZWo0dnpXSXpWb1J1Q2NKNFVvQlBUd3dfb3c3bWUwM0ZLeUlIcVN0T0dWMXVpWmROSndRMFJfRHFZdkl6blE5c2Z4VURiTGtZay11VEtqaE4xWld6cnJjcGRHS0IxVXd2U1dxX3l3LV9ONkpjd214SmdwWjZMY3NnSGx0Y0EyT2dRSVVLcWlkZ2pxUnNlMVlFX0hwTVdZWjN2S3Y5X2diRHpSUTU2ckQzVVJKaTUzdHFuSkcwSEdPb0RQbFVDLUtwTG5YVTIwMlIwYmQtcGEwOTVqdmYwZ21ObXgwY2pRQklMTmZJU3lIVzVjWjUtbV9VTEN3YWJWeUJReU0waUhMclVmVHBmQmZ2blR2VmdMUHdEb0lhWHFZT0k0SHVpT05HV3hBRDYzOTFxZG5WbmVid0dCOWZTMXpSVXBPSXhkckV1MC1ZWFN6cGdPMVZfemI0OXl2YmVzNEo0bHdMRXBWYklzbXdXdXlJNG1vVHh3S3U4STBNVGVqNHg2QzcwNTZvWTQ2SW01Nk5aTW5DSS1qaDV0aEx1TXdjVlBMemVfUUxNSk15bS1CUk5feE5BOW5OUFR6VHg1UFlwblhHTlJIVnkwTmNnVUE3NlJDMFpJS3VUUGplNjNGZ0M3eDhQTlpnQy1QRWM1aG1XM0hoanR0aF9qRmJnb3ZzalhvRGRIR2haakNFZnJlVHU1dDA1Q2huSFczeFZ0UzUzVV9jRzhTSmpRZnlUanYxb1dZSTdDMGRXbVVPYnF5Tjd4SVN5ZFBlUUlJN2hwdGRsRkF6WkdCaWZ5NDFoNU5LRjRzeFBkY1dIZ3k3T2hVRm1lZXhfRXdfYTdpMnQ5dHZteWEyWTk4azRVMDFOd1oycXpnNXBybTFvNlFmTFQ2S09IOXlPVW4tQ3FULXNPNUFaQ2tiOVlNN3lUbmFKbVdabTRnUHFjbU1DMmZIS1dPNU1WQnhFcHpnYWVxVmVyVGZ0T29wUU5jN3g5VE9WOEJtQzhJc3VuRGktNnlfbFJLU1pTR1RsRTZTcWRlb0RVMCZzYWk9QU1mbC1ZUnFqWVM1cVdBWXVkTmdaTVFHV3hIZzhBY2xzNkdDMXN0Vm4tdVhLMmc4X0kzT19ac1UwOExqcW1CRC12SjN2UkFzZ1h0SFZMcl85VHJ0eDdOLURTdzdnUmFYaDhjeE56Ym5IN0hLYmY4enotdXhMYWRRUmhkVHJIQTh6SEJnXzBDZ1hkRVdhdG5nUmdZaEdZZ2UtYnpGYnhETGdLZFRxSUlaX0ZvclFoNUhDdkI4SWVBZ1FnTndFTGFGdXFQUHFJcmVMWUx2VXNGUk5ZNm1TVVRVeHBxS2hpc2R4OHRwTUtuOFg4Q3lDbnM4X1VLeVhBJnNpZz1DZzBBcktKU3pCM1ljaEhnMUVpbUVBRSZjcnk9MSZmYnNfYWVpZD1bZ3dfZmJzYWVpZF0mdXJsZml4PTEmYWR1cmw9aHR0cHM6Ly9kLmFna24uY29tL3BpeGVsLzIzODkvJTNGY2hlJTNEMjEzODI5MTA3NyUyNmNvbCUzRDI5NjkzNzU3LDUzOTY4OTMsMzYzMjk3OTkyLDU1NDQ3ODkwNywxOTExOTkzMDklMjZsMSUzRGh0dHBzOi8vd3d3LmF0dC5jb20vY29ubmVjdHRvY2hhbmdlLyUzRnNvdXJjZSUzREVDRTIwMDAwMDAwYXRwMDBPJTI2Y20zNjAlM0Q2MTQyMzI4XzI5NjkzNzU3XzUzOTY4OTNfMzYzMjk3OTkyXzU1NDQ3ODkwNyUyNmRjbGlkJTNEJTI1ZWRjbGlkISIK%26dc_cid%3D191199309%26dc_adid%3D554478907%26aufilter1%3D1451932%26prr%3D1%26ppid%3D103%26autt%3D4%26auevent%3DABAjH0gzj4COUaz_mqJ10pZn48Vn%26c1%3D1451932%26auorder%3D1011203560%26aucmp%3D19879508588%26aucrtv%3D480884023%26pltfrm%3D10%26ausite%3D3402310441%26turl%3Dhttps://www.ratemyprofessors.com%26aubndl%3D%26_api%3D2,7,8%26_ssm%3D0%26_tsm%3D2023-05-19T13%3A08%3A06.141Z%26_abm%3D-1%26_pum%3Dhttps%3A%2F%2Fwww.ratemyprofessors.com%2Fprofessor%2F13339&imageUrl=https%3A%2F%2Ftag.researchnow.com%2Ft%2Fbeacon%3Fpr%3D288195%26adn%3D1%26ca%3D29693757%26si%3Dst_c8f0792f%26pl%3D363297992%26cr%3D363297992%26did%3DAdvertiserId%26ord%3DCacheBuster%26us_privacy%3D%24{US_PRIVACY}%26eid%3D{EVENT_ID}&duration=15000, line 1: TypeError: this.creative is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/gGcE_Je6QN6wd7zdqPO8VfplLXk3j_ez8wfuudjmOnY.js line 2 > eval line 5327 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4521 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://acdn.adnxs-simple.com/vx/static/w/anwrapper-1.1017.0.js, line 2: NS_ERROR_NOT_INITIALIZED
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://player.aniview.com/script/6.1/AVmanager.js?AV_PUBLISHERID=621cca388ba47d78a102e506, line 7: TypeError: t.container.parentNode is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3578 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:309:29
+
+console.error: "Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null\ngetMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:309:29\n"
+[Parent 13084, Main Thread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:593
+1684501880710	geckodriver	INFO	Listening on 127.0.0.1:50563
+1684501883763	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50564" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hyman\\AppData\\Local\\Temp\\rust_mozprofilegt2twz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684501884104	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1684501884109	Marionette	INFO	Listening on port 50584
+WebDriver BiDi listening on ws://127.0.0.1:50564
+Read port: 50584
+1684501884356	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:50564/devtools/browser/a0f6c8dc-48cd-46a4-8c5b-72d69a64d235
+1684501890430	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 1871 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6011 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684501902005	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1684501902600	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5821 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3135 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6270 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 630 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684501933365	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5348 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684501940958	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4709 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3623 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+JavaScript error: https://cdn.doubleverify.com/dv-measurements3783.js, line 1: TypeError: c.WindowAdaptor.workingDocument() is undefined
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+JavaScript error: https://cdn.doubleverify.com/dv-measurements3783.js, line 1: TypeError: c.WindowAdaptor.workingDocument() is undefined
+[Child 14900, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1684501944246	Marionette	INFO	Stopped listening on port 50584
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping
+1684501962673	geckodriver	INFO	Listening on 127.0.0.1:60206
+1684501965735	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60207" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hyman\\AppData\\Local\\Temp\\rust_mozprofile8EJVvo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684501966011	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1684501966015	Marionette	INFO	Listening on port 60214
+Read port: 60214
+WebDriver BiDi listening on ws://127.0.0.1:60207
+1684501966135	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:60207/devtools/browser/eec9dc7f-e78b-4545-8463-f8a5f96508b3
+1684501970937	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5802 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5104 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/teads245638586802/moatvideo.js#_moatApi36241818, line 272: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684501980954	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6697 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1684501983965	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1684501984351	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 12 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2636 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 1695 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: javascript:void;, line 1: SyntaxError: expected expression, got ';'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7277 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://imasdk.googleapis.com/js/sdkloader/ima3.js, line 555: TypeError: a.style is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7168 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684502014611	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4731 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14300, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1684502031043	Marionette	INFO	Stopped listening on port 60214
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684502058120	geckodriver	INFO	Listening on 127.0.0.1:51809
+1684502061173	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51810" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hyman\\AppData\\Local\\Temp\\rust_mozprofile5qHT7l"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684502061450	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1684502061454	Marionette	INFO	Listening on port 51817
+Read port: 51817
+WebDriver BiDi listening on ws://127.0.0.1:51810
+1684502061556	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:51810/devtools/browser/dcce38c2-3a24-4466-9c51-fabb3cdb80a3
+1684502065306	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684502070669	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3841 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7659 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5871 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 10892, MediaDecoderStateMachine #1] WARNING: 210acd31350 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3404 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 93 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5903 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5986 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6549 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 868 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5809 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4828 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2817 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4739 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3806 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7787 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7499 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2793 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3830 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 599))
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 1676 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 575 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2729 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3519 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7244 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3100 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1]: RenderDXGITextureHost AcquireSync timeout, hr=0x102
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4158 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 562 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7752 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3286 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2334 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6536 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+event 'pageshow' because document has an invalid readyState of 'interactive'.
+1684503124578	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript warning: https://z.moatads.com/teads245638586802/moatvideo.js#_moatApi92254834, line 272: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7009 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 1577 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6720 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 3392, MediaDecoderStateMachine #1] WARNING: 21aa0a1a460 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2892 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 7804 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5070 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5777 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.ratemyprofessors.com/professor/13339 line 1 > injectedScript, line 1: TypeError: window.parent is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 843 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://secure-ds.serving-sys.com/BurstingCachedScripts//Ad_2_237_3_0/ebStdBanner.js, line 137: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4647 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 528 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3467 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5322 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2016 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4892 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 5294 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 644 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2246 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6788 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 6670 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://s-static.innovid.com/mobileapps/s/js/vpaid/175r84?cb=42f19596-dd93-4df5-2dfd-f29e77d5b474&deviceid=&ivc=ivc_adstxt_domain%3Dindexexchange.com%26ivc_adstxt_publisher%3D187621%26ivc_appid%3D%26ivc_campaignid%3D20081922916%26ivc_creativeid%3D489558226%26ivc_orderid%3D1012004891%26ivc_dealid%3D%26ivc_publisherid%3D13%26ivc_site%3D3402310441%26ivc_dsp%3Ddv360%26ivc_dbmtoken%3DAD1EzRQAAABoCmAKDAgAFQAAAAAdAAAAABIMCAAVAAAAAB0AAAAAIhMI5Kbn50qoAp-UhwGwApvwx-IDQA3SAioYACITCJj0oNDAgf8CFTMIrQYdm54BTCgBMAE40tuur78RQAJIAViAhCgQ0qG46QH3VFg25_c4U9hpiaIs6Nv8%26iv_geo_dma%3D650%26iv_geo_country%3DUS%26iv_geo_city%3DWeatherford%26iv_geo_state%3DOK%26iv_geo_zip%3D73096%26iv_geo_lat%3D35.5318%26iv_geo_lon%3D-98.7028%26, line 402: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4200 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 2909 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 1696 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://s-static.innovid.com/mobileapps/s/js/vpaid/175r84?cb=42f19596-dd93-4df5-2dfd-f29e77d5b474&deviceid=&ivc=ivc_adstxt_domain%3Dindexexchange.com%26ivc_adstxt_publisher%3D187621%26ivc_appid%3D%26ivc_campaignid%3D20081922916%26ivc_creativeid%3D489558226%26ivc_orderid%3D1012004891%26ivc_dealid%3D%26ivc_publisherid%3D13%26ivc_site%3D3402310441%26ivc_dsp%3Ddv360%26ivc_dbmtoken%3DAD1EzRQAAABoCmAKDAgAFQAAAAAdAAAAABIMCAAVAAAAAB0AAAAAIhMI5Kbn50qoAp-UhwGwApvwx-IDQA3SAioYACITCJj0oNDAgf8CFTMIrQYdm54BTCgBMAE40tuur78RQAJIAViAhCgQ0qG46QH3VFg25_c4U9hpiaIs6Nv8%26iv_geo_dma%3D650%26iv_geo_country%3DUS%26iv_geo_city%3DWeatherford%26iv_geo_state%3DOK%26iv_geo_zip%3D73096%26iv_geo_lat%3D35.5318%26iv_geo_lon%3D-98.7028%26, line 402: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 4734 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/x4MEI6eqFB0dCdwpn32-R0gTDA087Zgj0u4bOKm75nA.js line 2 > eval line 3754 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
