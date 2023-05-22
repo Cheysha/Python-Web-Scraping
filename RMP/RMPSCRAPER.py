@@ -1,10 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait
-
-
+import threading
 from teacher import Teacher
-
 
 def get_university_teacher_list(university_id):
     '''
@@ -12,13 +9,23 @@ def get_university_teacher_list(university_id):
     '''
 
     counter = 0
+    '''
     option = webdriver.EdgeOptions()
     option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     option.add_argument("--no-sandbox")
+    option.add_argument("--disable-gpu")
     driver = webdriver.Edge(options=option)
-
+    '''
+    option = webdriver.FirefoxOptions()
+    option.add_argument("--headless")
+    option.add_argument("log-level=3")
+    option.add_argument("--disable-extensions")
+    #option.page_load_strategy = "eager"
+    #option.add_argument("--no-sandbox")
+    option.add_argument("--disable-gpu")
+    driver = webdriver.Firefox(options=option)
     print("driver created, getting page")
 
     driver.get(f"https://www.ratemyprofessors.com/search/teachers?query=*&sid={university_id}")
@@ -32,9 +39,6 @@ def get_university_teacher_list(university_id):
             break
 
     print("closed cookie warning")
-
-    # after we do that, lets look for the "Show More" button
-    # cant click because somthing obstructs it, need to scroll down, need to keep button in view
 
     while True:
         buttons = driver.find_elements(By.TAG_NAME, "button")
@@ -74,7 +78,7 @@ def get_university_teacher_list(university_id):
             '''
              TESTING PURPOSES
             '''
-            if(len(teacher_list) == 3):
+            if(len(teacher_list) == 6):
                 break
 
     tl = [] # the return list with teacher objects
@@ -86,15 +90,8 @@ def get_university_teacher_list(university_id):
     driver.close()
     return tl
 
-def get_teacher_reviews(teacher: Teacher):
-    option = webdriver.FirefoxOptions()
-    option.add_argument("--headless")
-    option.add_argument("log-level=3")
-    option.add_argument("--disable-extensions")
-    option.add_argument("--no-sandbox")
-    driver = webdriver.Firefox(options=option)
+def get_teacher_reviews(teacher: Teacher, driver):
 
-    print("driver created")
     print("getting page for", teacher.code)
 
     driver.get(teacher.code)
@@ -143,38 +140,78 @@ def get_teacher_reviews(teacher: Teacher):
     for list_element in review_list:
         # split the text by '/n'
         text = list_element.text.split('\n')
-        # create a dict
-        temp_comment = {'class': text[4], 'date': text[7], 'comment': text[8], 'quality': text[1],
-                        'difficulty': text[3], 'would_take_again': text[5], 'grade': text[9], 'tags': text[10]}
+        # create a dict, may need to rework this
+        # try catch
+        try:
+            temp_comment = {'class': text[4], 'date': text[7], 'comment': text[8], 'quality': text[1],
+                            'difficulty': text[3], 'would_take_again': text[5], 'grade': text[9], 'tags': text[10]}
+        except IndexError:
+            temp_comment = {}
         # add the dict to the list
         comments.append(temp_comment)
         # probaly clean this up a bit
-        teacher.comments = comments
+    teacher.comments = comments
     
-    driver.close()
-    
+    #driver.close()
 
+def process_teachers(teachers): # teachers, a list of teacher objects
+    '''
+    option = webdriver.EdgeOptions()
+    option.add_argument("--headless")
+    option.add_argument("log-level=3")
+    option.add_argument("--disable-extensions")
+    option.add_argument("--no-sandbox")
+    option.add_argument("--disable-gpu")
+    driver = webdriver.Edge(options=option)
+    '''
+    option = webdriver.FirefoxOptions()
+    option.add_argument("--headless")
+    option.add_argument("log-level=3")
+    option.add_argument("--disable-extensions")
+    option.add_argument("--no-sandbox")
+    option.add_argument("--disable-gpu")
+    option.page_load_strategy = 'eager'
+    driver = webdriver.Firefox(options=option)
+    print("driver created, getting page")
+
+    try:
+        for teacher in teachers:
+            reviews = get_teacher_reviews(teacher, driver)
+            # Do something with the reviews, such as write them to a file
+    finally:
+        driver.quit()
 
 
 
 if __name__ == '__main__':
-    test_list = get_university_teacher_list(946)
+    # this is working correctly i think, somtimes the page hangs and throws things off tho
+    test_list = get_university_teacher_list(1596)
 
     print("got teacher list ", len(test_list), " gettting reviews")
 
-
     #TODO: use a thread pool to get reviews for each teacher
 
-    
+    # split the list into 2 lists of equal size
+    half = len(test_list) // 2
+    first_half = test_list[:half]
+    second_half = test_list[half:]
 
-    get_teacher_reviews(test_list[1])
+    # create a thread for each list
+    t1 = threading.Thread(target=process_teachers, args=(first_half,))
+    t2 = threading.Thread(target=process_teachers, args=(second_half,))
 
-    print("got reviews")
+    # start the threads
+    t1.start()
+    t2.start()
 
+    # wait for the threads to finish
+    t1.join()
+    t2.join()
 
-    for comment in test_list[1].comments:
-        print(comment['comment'])
+    print("finished getting reviews")
 
-
-
-
+    for teacher in test_list:
+        if teacher.comments == None:
+            print("failed to get comments for", teacher.name)
+        else:
+            print("got comments for", teacher.name, len(teacher.comments))
