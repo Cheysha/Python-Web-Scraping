@@ -1,5 +1,4 @@
-
-# RMPSCRAPER.py
+# RateMyPerfessor Scraper
 
 This module provides functions for scraping data from the RateMyProfessors website.
 

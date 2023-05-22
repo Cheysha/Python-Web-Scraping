@@ -1,4 +1,4 @@
-# Scraping is Fun
+# ConsumerAffairs Scraper
 
 Python script to scrape consumeraffairs.com for reviews
 

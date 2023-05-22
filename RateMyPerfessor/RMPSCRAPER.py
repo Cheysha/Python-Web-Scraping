@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
-from teacher import Teacher
+from teacherClass import Teacher
 
 def get_university_teacher_list(university_id):
     '''
