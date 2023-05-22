@@ -5,7 +5,7 @@ from teacherClass import Teacher
 
 def get_university_teacher_list(university_id):
     '''
-         THIS GETS THE LIST OF TEACHERS FROM THE UNIVERSITY PAGE, AND DUMPS THE HTML TO A FILE
+         THIS GETS THE LIST OF TEACHERS FROM THE UNIVERSITY PAGE
     '''
 
     counter = 0
