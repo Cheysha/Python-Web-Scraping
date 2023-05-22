@@ -1,3 +1,6 @@
+import time
+
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
@@ -32,41 +35,32 @@ def get_university_teacher_list(university_id):
     driver.get(f"https://www.ratemyprofessors.com/search/teachers?query=*&sid={university_id}")
 
     print("got page")
-    '''
-    buttons = driver.find_elements(By.TAG_NAME, "button")
-    for button in buttons:
-        if button.text == "Close":
-            button.click()
-            break
-    '''
     if len(driver.find_elements(By.XPATH, "/html/body/div[5]/div/div/button")) > 0:
+        print("closed cookie warning")
         driver.find_element(By.XPATH, "/html/body/div[5]/div/div/button").click()
     else:
         print("no cookie warning found")
-    print("closed cookie warning")
+
 
     while True:
-        buttons = driver.find_elements(By.TAG_NAME, "button")
-        found_button = False  # Flag to track if a matching button was found
+        # /html/body/div[2]/div/div/div[4]/div[1]/div[1]/div[4]/button
 
-        for button in buttons:
-            if button.text == "Show More":
-                # scroll so button is at center of screen
-                driver.execute_script(
-                    "arguments[0].scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});",
-                    button)
-                button.click()
-                counter += 1
-                print(counter)
-                '''
-                                        TESTING PURPOSES
-                '''
-                if counter == 1:
-                    break
+        #buttons = driver.find_elements(By.TAG_NAME, "button")
 
-                found_button = True  # Set the flag to indicate a matching button was found
-        if not found_button:
-            break  # Break out of the while loop if no matching button was found
+        button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[4]/div[1]/div[1]/div[4]/button")
+
+        if (button != None):
+            '''
+            driver.execute_script(
+                "arguments[0].scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});",
+                button)
+            '''
+            button.click()
+            time.sleep(2)
+            counter += 1
+            print("clicked show more button " + str(counter))
+        else:
+            break
 
     print("finished loading page")
 
@@ -114,32 +108,36 @@ def get_teacher_reviews(teacher: Teacher, driver):
     # /html/body/div[5]/div/div/button
     if len(driver.find_elements(By.XPATH, "/html/body/div[5]/div/div/button")) > 0:
         driver.find_element(By.XPATH, "/html/body/div[5]/div/div/button").click()
+        print("closed cookie warning")
     else:
         print("no cookie warning found")
 
-    print("closed cookie warning")
-
     # find the "Load More Ratings" button, click it until it stops appearing
+    # xpath /html/body/div[2]/div/div/div[3]/div[4]/div/div/button
     while True:
-        buttons = driver.find_elements(By.TAG_NAME, "button")
-        found_button = False  # Flag to track if a matching button was found
+       load_more_button = driver.find_elements(By.XPATH, "/html/body/div[2]/div/div/div[3]/div[4]/div/div/button")
 
-        for button in buttons:
-            if button.text == "Load More Ratings":
-                # scroll so button is at center of screen
-                driver.execute_script(
-                    "arguments[0].scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});",
-                    button)
-                button.click()
-                found_button = True  # Set the flag to indicate a matching button was found
-
-        if not found_button:
-            break  # Break out of the while loop if no matching button was found
+       if len(load_more_button) > 0:
+            load_more_button[0].click()
+            # wait one second
+            time.sleep(2)
+            print("clicked load more button")
+       else: break
 
     print("finished hitting load more ratings")
 
-    ratings_element = driver.find_element(By.ID, "ratingsList")
-    review_list = (ratings_element.find_elements(By.CSS_SELECTOR, "li"))
+    #ratings_element = driver.find_element(By.ID, "ratingsList")
+    # //*[@id="ratingsList"]
+
+    try:
+        ratings_element = driver.find_element(By.XPATH, "//*[@id='ratingsList']")
+        review_list = (ratings_element.find_elements(By.CSS_SELECTOR, "li"))
+    except NoSuchElementException:
+        review_list = []
+        print("no reviews found for", teacher.name)
+
+
+
 
     # remove empty elements
     for list_element in review_list:
@@ -158,7 +156,7 @@ def get_teacher_reviews(teacher: Teacher, driver):
             temp_comment = {'class': text[4], 'date': text[7], 'comment': text[8], 'quality': text[1],
                             'difficulty': text[3], 'would_take_again': text[5], 'grade': text[9], 'tags': text[10]}
         except IndexError:
-            temp_comment = {}
+            temp_comment = text
         # add the dict to the list
         comments.append(temp_comment)
         # probaly clean this up a bit
@@ -169,12 +167,12 @@ def get_teacher_reviews(teacher: Teacher, driver):
 def process_teachers(teachers): # teachers, a list of teacher objects
 
     option = webdriver.EdgeOptions()
-    option.add_argument("--headless")
+    #option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     option.add_argument("--no-sandbox")
     option.add_argument("--disable-gpu")
-    option.page_load_strategy = 'eager'
+    #option.page_load_strategy = 'eager'
     driver = webdriver.Edge(options=option)
     '''
     option = webdriver.FirefoxOptions()
@@ -192,14 +190,14 @@ def process_teachers(teachers): # teachers, a list of teacher objects
             reviews = get_teacher_reviews(teacher, driver)
             # Do something with the reviews, such as write them to a file
     finally:
-        driver.quit()
+        driver.close()
 
 
 
 if __name__ == '__main__':
     # this is working correctly i think, somtimes the page hangs and throws things off tho
     #test_list = get_university_teacher_list(1596)
-    test_list = get_university_teacher_list(1596)
+    test_list = get_university_teacher_list(946)
 
     print("got teacher list ", len(test_list), " gettting reviews")
 
