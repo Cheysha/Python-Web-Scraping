@@ -3,16 +3,10 @@
 
 This module provides functions for scraping data from the RateMyProfessors website.
 
-## Functions
+the RateMyProfessors website. It uses the Selenium WebDriver to navigate to the teacher's page on the website, and then clicks the "Load More Ratings" button repeatedly until all reviews have been loaded. The function takes two parameters: `teacher`, which is a `Teacher` object representing the teacher to retrieve reviews for, and `driver`, which is a Selenium WebDriver instance.
 
-### `get_university_teacher_list(university_id: str) -> None`
 
-This function retrieves a list of teachers from a specific university based on the `university_id` provided. It uses the Selenium WebDriver to navigate to the university's page on the RateMyProfessors website, and then dumps the HTML to a file. The function takes a single parameter, `university_id`, which is a string representing the ID of the university to retrieve the teacher list for.
-
-### `get_teacher_reviews(teacher: Teacher, driver) -> None`
-
-This function retrieves the reviews for a specific teacher on the RateMyProfessors website. It uses the Selenium WebDriver to navigate to the teacher's page on the website, and then clicks the "Load More Ratings" button repeatedly until all reviews have been loaded. The function takes two parameters: `teacher`, which is a `Teacher` object representing the teacher to retrieve reviews for, and `driver`, which is a Selenium WebDriver instance.
-
+it also ustilizes threading to speed up the process of scraping reviews, and to prevent the script from timing out.
 ## Usage
 
 To use this module, you will need to have the Selenium WebDriver installed for your preferred browser (Firefox or Edge). You can then import the module and call the `get_university_teacher_list` and `get_teacher_reviews` functions as needed.
