@@ -9,13 +9,14 @@ def get_university_teacher_list(university_id):
     '''
 
     counter = 0
-    '''
+
     option = webdriver.EdgeOptions()
     option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     option.add_argument("--no-sandbox")
     option.add_argument("--disable-gpu")
+    option.page_load_strategy = "eager"
     driver = webdriver.Edge(options=option)
     '''
     option = webdriver.FirefoxOptions()
@@ -27,17 +28,21 @@ def get_university_teacher_list(university_id):
     option.add_argument("--disable-gpu")
     driver = webdriver.Firefox(options=option)
     print("driver created, getting page")
-
+    '''
     driver.get(f"https://www.ratemyprofessors.com/search/teachers?query=*&sid={university_id}")
 
     print("got page")
-
+    '''
     buttons = driver.find_elements(By.TAG_NAME, "button")
     for button in buttons:
         if button.text == "Close":
             button.click()
             break
-
+    '''
+    if len(driver.find_elements(By.XPATH, "/html/body/div[5]/div/div/button")) > 0:
+        driver.find_element(By.XPATH, "/html/body/div[5]/div/div/button").click()
+    else:
+        print("no cookie warning found")
     print("closed cookie warning")
 
     while True:
@@ -98,12 +103,19 @@ def get_teacher_reviews(teacher: Teacher, driver):
 
     print("got page for", teacher.code)
 
+    '''
     #close the cookie warning
     buttons = driver.find_elements(By.TAG_NAME, "button")
     for button in buttons:
         if button.text == "Close":
             button.click()
             break
+    '''
+    # /html/body/div[5]/div/div/button
+    if len(driver.find_elements(By.XPATH, "/html/body/div[5]/div/div/button")) > 0:
+        driver.find_element(By.XPATH, "/html/body/div[5]/div/div/button").click()
+    else:
+        print("no cookie warning found")
 
     print("closed cookie warning")
 
@@ -155,13 +167,14 @@ def get_teacher_reviews(teacher: Teacher, driver):
     #driver.close()
 
 def process_teachers(teachers): # teachers, a list of teacher objects
-    '''
+
     option = webdriver.EdgeOptions()
     option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     option.add_argument("--no-sandbox")
     option.add_argument("--disable-gpu")
+    option.page_load_strategy = 'eager'
     driver = webdriver.Edge(options=option)
     '''
     option = webdriver.FirefoxOptions()
@@ -173,7 +186,7 @@ def process_teachers(teachers): # teachers, a list of teacher objects
     option.page_load_strategy = 'eager'
     driver = webdriver.Firefox(options=option)
     print("driver created, getting page")
-
+    '''
     try:
         for teacher in teachers:
             reviews = get_teacher_reviews(teacher, driver)
@@ -185,6 +198,7 @@ def process_teachers(teachers): # teachers, a list of teacher objects
 
 if __name__ == '__main__':
     # this is working correctly i think, somtimes the page hangs and throws things off tho
+    #test_list = get_university_teacher_list(1596)
     test_list = get_university_teacher_list(1596)
 
     print("got teacher list ", len(test_list), " gettting reviews")

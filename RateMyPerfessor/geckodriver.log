@@ -1,0 +1,36 @@
+1684762310337	geckodriver	INFO	Listening on 127.0.0.1:55273
+1684762313392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "log-level=3" "--disable-exten ... 4" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\hyman\\AppData\\Local\\Temp\\rust_mozprofile1uUiUY"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1684762313738	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1684762313743	Marionette	INFO	Listening on port 55281
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+WebDriver BiDi listening on ws://127.0.0.1:55274
+Read port: 55281
+1684762313984	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:55274/devtools/browser/d8a59538-a3b6-4b43-b0b5-1d510ef2f281
+1684762322594	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1684762324890	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://z.moatads.com/quantcastv2691176990399/moatad.js#moatClientLevel1=p-1RYxePXT9bCS2&moatClientLevel2=qfm&moatClientLevel3=86183247-c941-4ce4-9e3e-d49831b44079&moatClientLevel4=90f5037c-e076-45f0-96a7-0d4ea8f8458b&uid=3psC-oKdX66XnlX629VT-4rJSqqMngHljM9RqYzMVPmJzAX8xMBQ_cTJoFG7qA==, line 283: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 6723 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 4945 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 5066 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 1062 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 5065 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 5371 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1684762353358	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 7501 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 821 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+Missing chrome or resource URL: chrome://browser/skin/aboutSessionRestore-window-icon.png
+Missing chrome or resource URL: chrome://browser/skin/abyss/img/waterfox-abyss-preview.svg
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 1350 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b4kQu0tD4hSA-hVARc1fzzODE0daF2Vy-bPLW9uau78.js line 2 > eval line 3984 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Shutting down due to socket process crash.
