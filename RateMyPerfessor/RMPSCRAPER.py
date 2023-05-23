@@ -9,6 +9,8 @@ from teacherClass import Teacher
 
 def get_university_teacher_list(university_id):
     counter = 0
+    max_page_count = 10
+    max_teacher_count = 300
 
     option = webdriver.EdgeOptions()
     option.add_argument("--headless")
@@ -57,6 +59,9 @@ def get_university_teacher_list(university_id):
             time.sleep(2)
             counter += 1
             print("clicked show more button " + str(counter))
+            if (counter >= max_page_count): # TESTING BREAK
+                break
+
         else:
             break
 
@@ -76,7 +81,7 @@ def get_university_teacher_list(university_id):
             t = teacher_element.text.split("\n")
             teacher_list_elements.append((teacher_element.get_attribute("href"), t))
 
-            if(len(teacher_list_elements) == 6): # TESTING BREAK
+            if(len(teacher_list_elements) >= max_teacher_count): # TESTING BREAK
                 break
     '''
         THIS CREATES A LIST OF TEACHER OBJECTS FROM THE LIST OF TEACHERS
@@ -94,14 +99,14 @@ def get_university_teacher_list(university_id):
 
 def get_teacher_reviews(teacher: Teacher, driver):
 
-    print("getting page for", teacher.code)
+    print("getting page for", teacher.name)
 
     '''
         THIS GETS THE REVIEWS FOR EACH TEACHER
     '''
     driver.get(teacher.code)
 
-    print("got page for", teacher.code)
+    print("got page for", teacher.name)
 
     '''
         THIS CLOSES THE COOKIE WARNING IF IT EXISTS
@@ -117,8 +122,9 @@ def get_teacher_reviews(teacher: Teacher, driver):
     '''
     while True:
        load_more_button = driver.find_elements(By.XPATH, "/html/body/div[2]/div/div/div[3]/div[4]/div/div/button")
-
        if len(load_more_button) > 0:
+           # scroll unitl the button is in the middle of the screen
+            driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", load_more_button[0])
             load_more_button[0].click()
             # wait one second
             time.sleep(2)
