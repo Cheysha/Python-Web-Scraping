@@ -1,4 +1,5 @@
 import time
+import pandas as pd
 
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -7,10 +8,6 @@ import threading
 from teacherClass import Teacher
 
 def get_university_teacher_list(university_id):
-    '''
-         THIS GETS THE LIST OF TEACHERS FROM THE UNIVERSITY PAGE
-    '''
-
     counter = 0
 
     option = webdriver.EdgeOptions()
@@ -32,29 +29,30 @@ def get_university_teacher_list(university_id):
     driver = webdriver.Firefox(options=option)
     print("driver created, getting page")
     '''
+
+    '''
+        THIS GETS THE PAGE
+    '''
     driver.get(f"https://www.ratemyprofessors.com/search/teachers?query=*&sid={university_id}")
 
     print("got page")
+
+    '''
+        THIS CLOSES THE COOKIE WARNING IF IT EXISTS
+    '''
     if len(driver.find_elements(By.XPATH, "/html/body/div[5]/div/div/button")) > 0:
         print("closed cookie warning")
         driver.find_element(By.XPATH, "/html/body/div[5]/div/div/button").click()
     else:
         print("no cookie warning found")
 
-
+    '''
+        THIS CLICKS THE SHOW MORE BUTTON UNTIL THERE ARE NO MORE TEACHERS TO LOAD
+    '''
     while True:
-        # /html/body/div[2]/div/div/div[4]/div[1]/div[1]/div[4]/button
-
-        #buttons = driver.find_elements(By.TAG_NAME, "button")
-
         button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[4]/div[1]/div[1]/div[4]/button")
 
         if (button != None):
-            '''
-            driver.execute_script(
-                "arguments[0].scrollIntoView({behavior: 'auto', block: 'center', inline: 'center'});",
-                button)
-            '''
             button.click()
             time.sleep(2)
             counter += 1
@@ -64,56 +62,59 @@ def get_university_teacher_list(university_id):
 
     print("finished loading page")
 
+    '''
+        THIS GETS THE LIST OF TEACHERS FROM THE PAGE
+    '''
     # find every <a> that has "TeacherCard" in the class name
     a_elements = driver.find_elements(By.TAG_NAME, "a")
-    teacher_list = []
+    teacher_list_elements = []
 
     for teacher_element in a_elements:
         if "TeacherCard" in teacher_element.get_attribute("class"):
             print(teacher_element.get_attribute("href"))
 
             t = teacher_element.text.split("\n")
-            teacher_list.append((teacher_element.get_attribute("href"), t))
-            '''
-             TESTING PURPOSES
-            '''
-            if(len(teacher_list) == 6):
-                break
+            teacher_list_elements.append((teacher_element.get_attribute("href"), t))
 
-    tl = [] # the return list with teacher objects
-    for teacher in teacher_list:
+            if(len(teacher_list_elements) == 6): # TESTING BREAK
+                break
+    '''
+        THIS CREATES A LIST OF TEACHER OBJECTS FROM THE LIST OF TEACHERS
+    '''
+    teacher_list = [] # the return list with teacher objects
+    for teacher in teacher_list_elements:
         n = Teacher(code=teacher[0], name=teacher[1][3], school=teacher[1][5], department=teacher[1][4],
                     rating=teacher[1][1], difficulty=teacher[1][8], would_take_again=teacher[1][6])
-        tl.append(n)
+        teacher_list.append(n)
+
+
 
     driver.close()
-    return tl
+    return teacher_list
 
 def get_teacher_reviews(teacher: Teacher, driver):
 
     print("getting page for", teacher.code)
 
+    '''
+        THIS GETS THE REVIEWS FOR EACH TEACHER
+    '''
     driver.get(teacher.code)
 
     print("got page for", teacher.code)
 
     '''
-    #close the cookie warning
-    buttons = driver.find_elements(By.TAG_NAME, "button")
-    for button in buttons:
-        if button.text == "Close":
-            button.click()
-            break
+        THIS CLOSES THE COOKIE WARNING IF IT EXISTS
     '''
-    # /html/body/div[5]/div/div/button
     if len(driver.find_elements(By.XPATH, "/html/body/div[5]/div/div/button")) > 0:
         driver.find_element(By.XPATH, "/html/body/div[5]/div/div/button").click()
         print("closed cookie warning")
     else:
         print("no cookie warning found")
 
-    # find the "Load More Ratings" button, click it until it stops appearing
-    # xpath /html/body/div[2]/div/div/div[3]/div[4]/div/div/button
+    '''
+        THIS CLICKS THE LOAD MORE BUTTON UNTIL THERE ARE NO MORE REVIEWS TO LOAD
+    '''
     while True:
        load_more_button = driver.find_elements(By.XPATH, "/html/body/div[2]/div/div/div[3]/div[4]/div/div/button")
 
@@ -126,18 +127,15 @@ def get_teacher_reviews(teacher: Teacher, driver):
 
     print("finished hitting load more ratings")
 
-    #ratings_element = driver.find_element(By.ID, "ratingsList")
-    # //*[@id="ratingsList"]
-
+    '''
+        THIS GETS THE LIST OF REVIEWS FROM THE PAGE
+    '''
     try:
         ratings_element = driver.find_element(By.XPATH, "//*[@id='ratingsList']")
         review_list = (ratings_element.find_elements(By.CSS_SELECTOR, "li"))
     except NoSuchElementException:
         review_list = []
         print("no reviews found for", teacher.name)
-
-
-
 
     # remove empty elements
     for list_element in review_list:
@@ -146,26 +144,23 @@ def get_teacher_reviews(teacher: Teacher, driver):
 
     comments = []
 
-    # for each list_element in review_list, split the text by '/n' and then add it to the dict
+    '''
+        THIS GETS THE TEXT FROM EACH REVIEW, AND ADDS IT TO THE TEACHER OBJECT
+    '''
     for list_element in review_list:
-        # split the text by '/n'
         text = list_element.text.split('\n')
-        # create a dict, may need to rework this
-        # try catch
         try:
             temp_comment = {'class': text[4], 'date': text[7], 'comment': text[8], 'quality': text[1],
                             'difficulty': text[3], 'would_take_again': text[5], 'grade': text[9], 'tags': text[10]}
         except IndexError:
             temp_comment = text
-        # add the dict to the list
+
         comments.append(temp_comment)
-        # probaly clean this up a bit
+
     teacher.comments = comments
-    
-    #driver.close()
+
 
 def process_teachers(teachers): # teachers, a list of teacher objects
-
     option = webdriver.EdgeOptions()
     #option.add_argument("--headless")
     option.add_argument("log-level=3")
@@ -195,8 +190,6 @@ def process_teachers(teachers): # teachers, a list of teacher objects
 
 
 if __name__ == '__main__':
-    # this is working correctly i think, somtimes the page hangs and throws things off tho
-    #test_list = get_university_teacher_list(1596)
     test_list = get_university_teacher_list(946)
 
     print("got teacher list ", len(test_list), " gettting reviews")
