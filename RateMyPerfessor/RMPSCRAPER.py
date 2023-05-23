@@ -1,4 +1,6 @@
 import time
+
+import numpy as np
 import pandas as pd
 
 from selenium.common import NoSuchElementException
@@ -200,24 +202,24 @@ if __name__ == '__main__':
 
     print("got teacher list ", len(test_list), " gettting reviews")
 
-    #TODO: use a thread pool to get reviews for each teacher
-
-    # split the list into 2 lists of equal size
-    half = len(test_list) // 2
-    first_half = test_list[:half]
-    second_half = test_list[half:]
+    # split the list into n lists of equal size
+    n = 4
+    split_list = np.array_split(test_list, n)
 
     # create a thread for each list
-    t1 = threading.Thread(target=process_teachers, args=(first_half,))
-    t2 = threading.Thread(target=process_teachers, args=(second_half,))
+    threads = []
+    for i in range(n):
+        threads.append(threading.Thread(target=process_teachers, args=(split_list[i],)))
 
     # start the threads
-    t1.start()
-    t2.start()
+    for thread in threads:
+        thread.start()
 
     # wait for the threads to finish
-    t1.join()
-    t2.join()
+    for thread in threads:
+        thread.join()
+
+
 
     print("finished getting reviews")
 
