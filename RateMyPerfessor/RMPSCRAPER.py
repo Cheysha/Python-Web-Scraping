@@ -7,20 +7,27 @@ from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
-from teacherClass import Teacher
+#from teacherClass import Teacher
+
+# the whole data part nees to be changed, instead of objects it should be a dataframes
+# the dataframes should be saved to a csv file
+
+teacher_dataframes = []
+comment_dataframes = []
 
 def get_university_teacher_list(university_id):
+    #from teacherClass import Teacher
     counter = 0
-    max_page_count = 10
-    max_teacher_count = 300
+    max_page_count = 2
+    max_teacher_count = 3
 
     option = webdriver.EdgeOptions()
-    option.add_argument("--headless")
+    #option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     option.add_argument("--no-sandbox")
     option.add_argument("--disable-gpu")
-    option.page_load_strategy = "eager"
+    #option.page_load_strategy = "eager"
     driver = webdriver.Edge(options=option)
     '''
     option = webdriver.FirefoxOptions()
@@ -38,7 +45,6 @@ def get_university_teacher_list(university_id):
         THIS GETS THE PAGE
     '''
     driver.get(f"https://www.ratemyprofessors.com/search/teachers?query=*&sid={university_id}")
-
     print("got page")
 
     '''
@@ -54,7 +60,10 @@ def get_university_teacher_list(university_id):
         THIS CLICKS THE SHOW MORE BUTTON UNTIL THERE ARE NO MORE TEACHERS TO LOAD
     '''
     while True:
-        button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[4]/div[1]/div[1]/div[4]/button")
+        try:
+            button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[4]/div[1]/div[1]/div[4]/button")
+        except NoSuchElementException:
+            button = None
 
         if (button != None):
             button.click()
@@ -66,7 +75,6 @@ def get_university_teacher_list(university_id):
 
         else:
             break
-
     print("finished loading page")
 
     '''
@@ -83,23 +91,33 @@ def get_university_teacher_list(university_id):
             t = teacher_element.text.split("\n")
             teacher_list_elements.append((teacher_element.get_attribute("href"), t))
 
+            # add the links to the dataframe
+            teacher_dataframes.append(pd.DataFrame(teacher_element.get_attribute("href"), columns=["link"]))
+
             if(len(teacher_list_elements) >= max_teacher_count): # TESTING BREAK
                 break
+
     '''
         THIS CREATES A LIST OF TEACHER OBJECTS FROM THE LIST OF TEACHERS
     '''
     teacher_list = [] # the return list with teacher objects
+    '''
     for teacher in teacher_list_elements:
         n = Teacher(code=teacher[0], name=teacher[1][3], school=teacher[1][5], department=teacher[1][4],
                     rating=teacher[1][1], difficulty=teacher[1][8], would_take_again=teacher[1][6])
         teacher_list.append(n)
+    '''
+    ############################################# CREATING DATAFRAMES #############################################
+    for teacher in teacher_list_elements:
+        teacher_dataframes.append(pd.DataFrame(teacher[0], columns=["link"]))
+    print(teacher_dataframes)
 
-
-
+    '''
+        THIS CLOSES THE DRIVER, END OF FUNCTION
+    '''
     driver.close()
     return teacher_list
-
-def get_teacher_reviews(teacher: Teacher, driver):
+def get_teacher_reviews(Teacher, driver):
 
     print("getting page for", teacher.name)
 
@@ -125,10 +143,9 @@ def get_teacher_reviews(teacher: Teacher, driver):
     while True:
        load_more_button = driver.find_elements(By.XPATH, "/html/body/div[2]/div/div/div[3]/div[4]/div/div/button")
        if len(load_more_button) > 0:
-           # scroll unitl the button is in the middle of the screen
+            # scroll unitl the button is in the middle of the screen
             driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", load_more_button[0])
             load_more_button[0].click()
-            # wait one second
             time.sleep(2)
             print("clicked load more button")
        else: break
@@ -153,7 +170,9 @@ def get_teacher_reviews(teacher: Teacher, driver):
     comments = []
 
     '''
-        THIS GETS THE TEXT FROM EACH REVIEW, AND ADDS IT TO THE TEACHER OBJECT
+        THIS GETS THE TEXT FROM EACH REVIEW, WILL ADD EACH COMMENT TO A DATAFRAME, AND WILL BE TAGGED WITH THE TEACHER CODE
+    '''
+    ############################################# CREATING DATAFRAMES #############################################
     '''
     for list_element in review_list:
         text = list_element.text.split('\n')
@@ -164,12 +183,12 @@ def get_teacher_reviews(teacher: Teacher, driver):
             temp_comment = text
 
         comments.append(temp_comment)
-
     teacher.comments = comments
-
+    '''
 
 def process_teachers(teachers): # teachers, a list of teacher objects
     option = webdriver.EdgeOptions()
+
     #option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
@@ -203,12 +222,12 @@ if __name__ == '__main__':
     print("got teacher list ", len(test_list), " gettting reviews")
 
     # split the list into n lists of equal size
-    n = 4
-    split_list = np.array_split(test_list, n)
+    thread_count = 1
+    split_list = np.array_split(test_list, thread_count)
 
     # create a thread for each list
     threads = []
-    for i in range(n):
+    for i in range(thread_count):
         threads.append(threading.Thread(target=process_teachers, args=(split_list[i],)))
 
     # start the threads
