@@ -7,19 +7,19 @@ from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
-#from teacherClass import Teacher
 
-# the whole data part nees to be changed, instead of objects it should be a dataframes
-# the dataframes should be saved to a csv file
 
-teacher_dataframes = []
-comment_dataframes = []
+# so now using dataframes, so ther teachers have their own data frame, and im thinking the reviews will have their own dataframe
+
+# need to rework how were getting reveiws
+
+teacher_dataframes = pd.DataFrame(columns=["link", "name", "school", "department","rating", "difficulty", "would_take_again"])
 
 def get_university_teacher_list(university_id):
     #from teacherClass import Teacher
     counter = 0
-    max_page_count = 2
-    max_teacher_count = 3
+    max_page_count = 10
+    max_teacher_count = 40
 
     option = webdriver.EdgeOptions()
     #option.add_argument("--headless")
@@ -27,7 +27,7 @@ def get_university_teacher_list(university_id):
     option.add_argument("--disable-extensions")
     option.add_argument("--no-sandbox")
     option.add_argument("--disable-gpu")
-    #option.page_load_strategy = "eager"
+    option.page_load_strategy = "eager"
     driver = webdriver.Edge(options=option)
     '''
     option = webdriver.FirefoxOptions()
@@ -44,7 +44,8 @@ def get_university_teacher_list(university_id):
     '''
         THIS GETS THE PAGE
     '''
-    driver.get(f"https://www.ratemyprofessors.com/search/teachers?query=*&sid={university_id}")
+    url = f"https://www.ratemyprofessors.com/search/professors/{university_id}?q=*"
+    driver.get(url)
     print("got page")
 
     '''
@@ -66,6 +67,10 @@ def get_university_teacher_list(university_id):
             button = None
 
         if (button != None):
+            # scroll unitl the button is in the middle of the screen
+            driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", button)
+
+
             button.click()
             time.sleep(2)
             counter += 1
@@ -92,7 +97,7 @@ def get_university_teacher_list(university_id):
             teacher_list_elements.append((teacher_element.get_attribute("href"), t))
 
             # add the links to the dataframe
-            teacher_dataframes.append(pd.DataFrame(teacher_element.get_attribute("href"), columns=["link"]))
+
 
             if(len(teacher_list_elements) >= max_teacher_count): # TESTING BREAK
                 break
@@ -100,23 +105,20 @@ def get_university_teacher_list(university_id):
     '''
         THIS CREATES A LIST OF TEACHER OBJECTS FROM THE LIST OF TEACHERS
     '''
-    teacher_list = [] # the return list with teacher objects
-    '''
-    for teacher in teacher_list_elements:
-        n = Teacher(code=teacher[0], name=teacher[1][3], school=teacher[1][5], department=teacher[1][4],
-                    rating=teacher[1][1], difficulty=teacher[1][8], would_take_again=teacher[1][6])
-        teacher_list.append(n)
-    '''
     ############################################# CREATING DATAFRAMES #############################################
+
     for teacher in teacher_list_elements:
-        teacher_dataframes.append(pd.DataFrame(teacher[0], columns=["link"]))
-    print(teacher_dataframes)
+        data = {"link": teacher[0], "name": teacher[1][3], "school": teacher[1][5], "department": teacher[1][4], "rating": teacher[1][1], "difficulty": teacher[1][8], "would_take_again": teacher[1][6]}
+        t = pd.DataFrame(data, index=[0])
+        teacher_dataframes.loc[len(teacher_dataframes)] = [teacher[0], teacher[1][3], teacher[1][5], teacher[1][4], teacher[1][1], teacher[1][8], teacher[1][6]]
 
     '''
         THIS CLOSES THE DRIVER, END OF FUNCTION
     '''
     driver.close()
-    return teacher_list
+
+# needs reworked, no longer teacher objects, maybe i could just split the dataframe, really all i need area list of links,
+    # so instead of sending a teacher object i will just send a link,
 def get_teacher_reviews(Teacher, driver):
 
     print("getting page for", teacher.name)
@@ -186,6 +188,8 @@ def get_teacher_reviews(Teacher, driver):
     teacher.comments = comments
     '''
 
+
+# instead of sending a list of teacher objects, i will send a list of links
 def process_teachers(teachers): # teachers, a list of teacher objects
     option = webdriver.EdgeOptions()
 
