@@ -8,21 +8,16 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
 
-
-# so now using dataframes, so ther teachers have their own data frame, and im thinking the reviews will have their own dataframe
-
-# need to rework how were getting reveiws
-
 teacher_dataframes = pd.DataFrame(columns=["link", "name", "school", "department","rating", "difficulty", "would_take_again"])
+review_dataframes = pd.DataFrame(columns=["link", "name","quality", "difficulty", "class", "text", "date", "for_credit", "attendance", "textbook", "would_take_again", "grade_received", "tags", "found_helpful", "found_unhelpful"])
 
 def get_university_teacher_list(university_id):
-    #from teacherClass import Teacher
     counter = 0
-    max_page_count = 10
-    max_teacher_count = 40
+    max_page_count = 1
+    max_teacher_count = 2
 
     option = webdriver.EdgeOptions()
-    #option.add_argument("--headless")
+    option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     option.add_argument("--no-sandbox")
@@ -70,7 +65,6 @@ def get_university_teacher_list(university_id):
             # scroll unitl the button is in the middle of the screen
             driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", button)
 
-
             button.click()
             time.sleep(2)
             counter += 1
@@ -88,16 +82,10 @@ def get_university_teacher_list(university_id):
     # find every <a> that has "TeacherCard" in the class name
     a_elements = driver.find_elements(By.TAG_NAME, "a")
     teacher_list_elements = []
-
     for teacher_element in a_elements:
         if "TeacherCard" in teacher_element.get_attribute("class"):
-            print(teacher_element.get_attribute("href"))
-
             t = teacher_element.text.split("\n")
             teacher_list_elements.append((teacher_element.get_attribute("href"), t))
-
-            # add the links to the dataframe
-
 
             if(len(teacher_list_elements) >= max_teacher_count): # TESTING BREAK
                 break
@@ -116,19 +104,16 @@ def get_university_teacher_list(university_id):
         THIS CLOSES THE DRIVER, END OF FUNCTION
     '''
     driver.close()
+def get_teacher_reviews(teacher_url, driver):
 
-# needs reworked, no longer teacher objects, maybe i could just split the dataframe, really all i need area list of links,
-    # so instead of sending a teacher object i will just send a link,
-def get_teacher_reviews(Teacher, driver):
-
-    print("getting page for", teacher.name)
+    print("getting page for", teacher_url)
 
     '''
         THIS GETS THE REVIEWS FOR EACH TEACHER
     '''
-    driver.get(teacher.code)
+    driver.get(teacher_url)
 
-    print("got page for", teacher.name)
+    print("got page for", teacher_url)
 
     '''
         THIS CLOSES THE COOKIE WARNING IF IT EXISTS
@@ -145,11 +130,12 @@ def get_teacher_reviews(Teacher, driver):
     while True:
        load_more_button = driver.find_elements(By.XPATH, "/html/body/div[2]/div/div/div[3]/div[4]/div/div/button")
        if len(load_more_button) > 0:
-            # scroll unitl the button is in the middle of the screen
-            driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", load_more_button[0])
+            driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", load_more_button) # scroll unitl the button is in the middle of the screen
             load_more_button[0].click()
+
             time.sleep(2)
             print("clicked load more button")
+
        else: break
 
     print("finished hitting load more ratings")
@@ -162,7 +148,7 @@ def get_teacher_reviews(Teacher, driver):
         review_list = (ratings_element.find_elements(By.CSS_SELECTOR, "li"))
     except NoSuchElementException:
         review_list = []
-        print("no reviews found for", teacher.name)
+        print("no reviews found for", teacher_url)
 
     # remove empty elements
     for list_element in review_list:
@@ -187,10 +173,21 @@ def get_teacher_reviews(Teacher, driver):
         comments.append(temp_comment)
     teacher.comments = comments
     '''
+    for list_element in review_list:
+        # add the comment to the comment_dataframe
+        text = list_element.text.split('\n')
+        try:
+            data = {'class': text[4], 'date': text[7], 'comment': text[8], 'quality': text[1],
+                            'difficulty': text[3], 'would_take_again': text[5], 'grade': text[9], 'tags': text[10]}
+        except IndexError:
+            data = text
+
+        review_dataframes.loc[len(review_dataframes)] = [text[4], text[7], text[8], text[1], text[3], text[5], text[9], text[10], teacher_url]
+
 
 
 # instead of sending a list of teacher objects, i will send a list of links
-def process_teachers(teachers): # teachers, a list of teacher objects
+def process_teachers(data): # teachers, a list of teacher objects
     option = webdriver.EdgeOptions()
 
     #option.add_argument("--headless")
@@ -212,8 +209,12 @@ def process_teachers(teachers): # teachers, a list of teacher objects
     print("driver created, getting page")
     '''
     try:
-        for teacher in teachers:
-            reviews = get_teacher_reviews(teacher, driver)
+        # iterate through each row in the data dataframe and grab the contents of link column
+        for index, row in data.iterrows():
+            teacher = row['link']
+            print("getting reviews for", teacher)
+            get_teacher_reviews(teacher, driver)
+
             # Do something with the reviews, such as write them to a file
     finally:
         driver.close()
@@ -221,18 +222,18 @@ def process_teachers(teachers): # teachers, a list of teacher objects
 
 
 if __name__ == '__main__':
-    test_list = get_university_teacher_list(946)
+    get_university_teacher_list(946)
+    print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
 
-    print("got teacher list ", len(test_list), " gettting reviews")
 
-    # split the list into n lists of equal size
-    thread_count = 1
-    split_list = np.array_split(test_list, thread_count)
+    # split the dataframe into n chunks
+    n = 2
+    chunks = np.array_split(teacher_dataframes, n)
 
     # create a thread for each list
     threads = []
-    for i in range(thread_count):
-        threads.append(threading.Thread(target=process_teachers, args=(split_list[i],)))
+    for i in range(n):
+        threads.append(threading.Thread(target=process_teachers, args=(chunks[i],)))
 
     # start the threads
     for thread in threads:
@@ -244,10 +245,17 @@ if __name__ == '__main__':
 
 
 
-    print("finished getting reviews")
 
-    for teacher in test_list:
-        if teacher.comments == None:
-            print("failed to get comments for", teacher.name)
-        else:
-            print("got comments for", teacher.name, len(teacher.comments))
+
+    breakpoint()
+
+
+
+
+
+    process_teachers(teacher_dataframes)
+
+
+
+    print("finished getting reviews")
+    print(teacher_dataframes.to_string())
