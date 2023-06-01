@@ -8,8 +8,9 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
 
+debug = []
 teacher_dataframes = pd.DataFrame(columns=["link", "name", "school", "department","rating", "difficulty", "would_take_again"])
-review_dataframes = pd.DataFrame(columns=["link", "name","quality", "difficulty", "class", "text", "date", "for_credit", "attendance", "textbook", "would_take_again", "grade_received", "tags", "found_helpful", "found_unhelpful"])
+review_dataframes = pd.DataFrame(columns=["link", "code","quality", "difficulty", "class", "text", "date", "for_credit", "attendance", "textbook", "would_take_again", "grade_received", "tags", "found_helpful", "found_unhelpful"])
 
 #TODO: make the reviews fit into a dataframe together, CURRENT
 
@@ -180,13 +181,13 @@ def get_teacher_reviews(teacher_url, driver):
         # add the comment to the comment_dataframe
         text = list_element.text.split('\n')
         try:
-            data = {'class': text[4], 'date': text[7], 'comment': text[8], 'quality': text[1],
-                            'difficulty': text[3], 'would_take_again': text[5], 'grade': text[9], 'tags': text[10]}
+            data = {'class': text[4], 'date': text[7], 'textbook': text[8], 'quality': text[1],
+                            'difficulty': text[3], 'would_take_again': text[5], 'comment': text[9], 'tags': text[10]}
         except IndexError:
             data = text
-
-        review_dataframes.loc[len(review_dataframes)] = [text[4], text[7], text[8], text[1], text[3], text[5], text[9], text[10], teacher_url]
-
+        debug.append(data)
+        #RIGHT HERE OFFICER
+        #review_dataframes.loc[len(review_dataframes)] = [text[4], text[7], text[8], text[1], text[3], text[5], text[9], text[10], teacher_url]
 # instead of sending a list of teacher objects, i will send a list of links
 def process_teachers(data): # teachers, a list of teacher objects
     option = webdriver.EdgeOptions()
@@ -222,6 +223,7 @@ def process_teachers(data): # teachers, a list of teacher objects
 
 
 
+
 if __name__ == '__main__':
     get_university_teacher_list(946)
     print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
@@ -231,6 +233,7 @@ if __name__ == '__main__':
     chunks = np.array_split(teacher_dataframes, n)
 
     # create a thread for each list
+    '''
     threads = []
     for i in range(n):
         threads.append(threading.Thread(target=process_teachers, args=(chunks[i],)))
@@ -242,7 +245,7 @@ if __name__ == '__main__':
     # wait for the threads to finish
     for thread in threads:
         thread.join()
-
+    '''
 
     process_teachers(teacher_dataframes)
 
