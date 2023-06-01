@@ -1,5 +1,6 @@
 import sys
 import requests
+import pandas as pd
 from bs4 import BeautifulSoup
 
 
@@ -47,13 +48,25 @@ for page in pages:
         reviews.append(item.find_all('p'))
 
 # write to file
-'''
+''''
 with open(f"../Reviews/ConsumerAffairs/{subject}_reviews.txt", "w", encoding="utf-8") as f:
     for review in reviews:
         f.write('*: ' + review[0].text)
         f.write("\n")
 '''
+# create new data frame
+df = pd.DataFrame(columns=['review'])
+
+# add reviews to data frame
+for review in reviews:
+    # NEEDS FIXED, CURREN
+    df = df._append({'review': review[0].text}, ignore_index=True)
+
+
+
 print(f"Number of pages: {len(pages)}")
 print(f"Number of reviews: {len(reviews)}")
+
+print(df.to_string())
 
 

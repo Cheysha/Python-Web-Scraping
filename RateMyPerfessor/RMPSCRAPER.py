@@ -11,11 +11,14 @@ import threading
 teacher_dataframes = pd.DataFrame(columns=["link", "name", "school", "department","rating", "difficulty", "would_take_again"])
 review_dataframes = pd.DataFrame(columns=["link", "name","quality", "difficulty", "class", "text", "date", "for_credit", "attendance", "textbook", "would_take_again", "grade_received", "tags", "found_helpful", "found_unhelpful"])
 
+#TODO: make the reviews fit into a dataframe together, CURRENT
+
+
 def get_university_teacher_list(university_id):
     counter = 0
     max_page_count = 1
     max_teacher_count = 2
-
+    '''
     option = webdriver.EdgeOptions()
     option.add_argument("--headless")
     option.add_argument("log-level=3")
@@ -30,11 +33,11 @@ def get_university_teacher_list(university_id):
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     #option.page_load_strategy = "eager"
-    #option.add_argument("--no-sandbox")
+    option.add_argument("--no-sandbox")
     option.add_argument("--disable-gpu")
     driver = webdriver.Firefox(options=option)
     print("driver created, getting page")
-    '''
+
 
     '''
         THIS GETS THE PAGE
@@ -130,7 +133,7 @@ def get_teacher_reviews(teacher_url, driver):
     while True:
        load_more_button = driver.find_elements(By.XPATH, "/html/body/div[2]/div/div/div[3]/div[4]/div/div/button")
        if len(load_more_button) > 0:
-            driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", load_more_button) # scroll unitl the button is in the middle of the screen
+            #driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", load_more_button) # scroll unitl the button is in the middle of the screen
             load_more_button[0].click()
 
             time.sleep(2)
@@ -184,12 +187,10 @@ def get_teacher_reviews(teacher_url, driver):
 
         review_dataframes.loc[len(review_dataframes)] = [text[4], text[7], text[8], text[1], text[3], text[5], text[9], text[10], teacher_url]
 
-
-
 # instead of sending a list of teacher objects, i will send a list of links
 def process_teachers(data): # teachers, a list of teacher objects
     option = webdriver.EdgeOptions()
-
+    '''
     #option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
@@ -207,7 +208,7 @@ def process_teachers(data): # teachers, a list of teacher objects
     option.page_load_strategy = 'eager'
     driver = webdriver.Firefox(options=option)
     print("driver created, getting page")
-    '''
+
     try:
         # iterate through each row in the data dataframe and grab the contents of link column
         for index, row in data.iterrows():
@@ -224,7 +225,6 @@ def process_teachers(data): # teachers, a list of teacher objects
 if __name__ == '__main__':
     get_university_teacher_list(946)
     print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
-
 
     # split the dataframe into n chunks
     n = 2
@@ -244,17 +244,7 @@ if __name__ == '__main__':
         thread.join()
 
 
-
-
-
-    breakpoint()
-
-
-
-
-
     process_teachers(teacher_dataframes)
-
 
 
     print("finished getting reviews")
