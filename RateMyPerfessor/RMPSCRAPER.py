@@ -33,7 +33,7 @@ def get_university_teacher_list(university_id):
     option.add_argument("--headless")
     option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
-    #option.page_load_strategy = "eager"
+    option.page_load_strategy = "eager"
     option.add_argument("--no-sandbox")
     option.add_argument("--disable-gpu")
     driver = webdriver.Firefox(options=option)
@@ -109,9 +109,6 @@ def get_university_teacher_list(university_id):
     '''
     driver.close()
 def get_teacher_reviews(teacher_url, driver):
-
-    print("getting page for", teacher_url)
-
     '''
         THIS GETS THE REVIEWS FOR EACH TEACHER
     '''
@@ -150,6 +147,7 @@ def get_teacher_reviews(teacher_url, driver):
     try:
         ratings_element = driver.find_element(By.XPATH, "//*[@id='ratingsList']")
         review_list = (ratings_element.find_elements(By.CSS_SELECTOR, "li"))
+        print("finished getting reviews for", teacher_url)
     except NoSuchElementException:
         review_list = []
         print("no reviews found for", teacher_url)
@@ -165,18 +163,6 @@ def get_teacher_reviews(teacher_url, driver):
         THIS GETS THE TEXT FROM EACH REVIEW, WILL ADD EACH COMMENT TO A DATAFRAME, AND WILL BE TAGGED WITH THE TEACHER CODE
     '''
     ############################################# CREATING DATAFRAMES #############################################
-    '''
-    for list_element in review_list:
-        text = list_element.text.split('\n')
-        try:
-            temp_comment = {'class': text[4], 'date': text[7], 'comment': text[8], 'quality': text[1],
-                            'difficulty': text[3], 'would_take_again': text[5], 'grade': text[9], 'tags': text[10]}
-        except IndexError:
-            temp_comment = text
-
-        comments.append(temp_comment)
-    teacher.comments = comments
-    '''
     for list_element in review_list:
         # add the comment to the comment_dataframe
         text = list_element.text.split('\n')
@@ -185,12 +171,11 @@ def get_teacher_reviews(teacher_url, driver):
                             'difficulty': text[3], 'would_take_again': text[5], 'comment': text[9], 'tags': text[10]}
         except IndexError:
             data = text
-        debug.append(data)
-        #RIGHT HERE OFFICER
+        debug.append(text)
         #review_dataframes.loc[len(review_dataframes)] = [text[4], text[7], text[8], text[1], text[3], text[5], text[9], text[10], teacher_url]
-# instead of sending a list of teacher objects, i will send a list of links
+
 def process_teachers(data): # teachers, a list of teacher objects
-    option = webdriver.EdgeOptions()
+    #option = webdriver.EdgeOptions()
     '''
     #option.add_argument("--headless")
     option.add_argument("log-level=3")
@@ -226,6 +211,10 @@ def process_teachers(data): # teachers, a list of teacher objects
 
 if __name__ == '__main__':
     get_university_teacher_list(946)
+
+    print(teacher_dataframes.to_string())
+
+
     print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
 
     # split the dataframe into n chunks
@@ -251,4 +240,7 @@ if __name__ == '__main__':
 
 
     print("finished getting reviews")
-    print(teacher_dataframes.to_string())
+
+    for entry in debug:
+        print(entry)
+        print("\n")
