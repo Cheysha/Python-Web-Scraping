@@ -1,34 +1,22 @@
 import time
-
 import numpy as np
 import pandas as pd
-
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
 
+
 debug = []
 teacher_dataframes = pd.DataFrame(columns=["link", "name", "school", "department","rating", "difficulty", "would_take_again"])
 review_dataframes = pd.DataFrame(columns=["link", "code","quality", "difficulty", "class", "text", "date", "for_credit", "attendance", "textbook", "would_take_again", "grade_received", "tags", "found_helpful", "found_unhelpful"])
-
-#TODO: make the reviews fit into a dataframe together, CURRENT
 
 
 def get_university_teacher_list(university_id):
     counter = 0
     max_page_count = 1
     max_teacher_count = 2
-    '''
-    option = webdriver.EdgeOptions()
-    option.add_argument("--headless")
-    option.add_argument("log-level=3")
-    option.add_argument("--disable-extensions")
-    option.add_argument("--no-sandbox")
-    option.add_argument("--disable-gpu")
-    option.page_load_strategy = "eager"
-    driver = webdriver.Edge(options=option)
-    '''
+
     option = webdriver.FirefoxOptions()
     option.add_argument("--headless")
     option.add_argument("log-level=3")
@@ -38,7 +26,6 @@ def get_university_teacher_list(university_id):
     option.add_argument("--disable-gpu")
     driver = webdriver.Firefox(options=option)
     print("driver created, getting page")
-
 
     '''
         THIS GETS THE PAGE
@@ -113,7 +100,6 @@ def get_teacher_reviews(teacher_url, driver):
         THIS GETS THE REVIEWS FOR EACH TEACHER
     '''
     driver.get(teacher_url)
-
     print("got page for", teacher_url)
 
     '''
@@ -133,10 +119,8 @@ def get_teacher_reviews(teacher_url, driver):
        if len(load_more_button) > 0:
             #driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", load_more_button) # scroll unitl the button is in the middle of the screen
             load_more_button[0].click()
-
             time.sleep(2)
             print("clicked load more button")
-
        else: break
 
     print("finished hitting load more ratings")
@@ -175,16 +159,6 @@ def get_teacher_reviews(teacher_url, driver):
         #review_dataframes.loc[len(review_dataframes)] = [text[4], text[7], text[8], text[1], text[3], text[5], text[9], text[10], teacher_url]
 
 def process_teachers(data): # teachers, a list of teacher objects
-    #option = webdriver.EdgeOptions()
-    '''
-    #option.add_argument("--headless")
-    option.add_argument("log-level=3")
-    option.add_argument("--disable-extensions")
-    option.add_argument("--no-sandbox")
-    option.add_argument("--disable-gpu")
-    #option.page_load_strategy = 'eager'
-    driver = webdriver.Edge(options=option)
-    '''
     option = webdriver.FirefoxOptions()
     option.add_argument("--headless")
     option.add_argument("log-level=3")
@@ -197,23 +171,18 @@ def process_teachers(data): # teachers, a list of teacher objects
 
     try:
         # iterate through each row in the data dataframe and grab the contents of link column
+        # then add reviews for each teacher to the review dataframe
         for index, row in data.iterrows():
             teacher = row['link']
             print("getting reviews for", teacher)
             get_teacher_reviews(teacher, driver)
-
-            # Do something with the reviews, such as write them to a file
     finally:
         driver.close()
 
 
-
-
 if __name__ == '__main__':
     get_university_teacher_list(946)
-
     print(teacher_dataframes.to_string())
-
 
     print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
 
@@ -237,10 +206,19 @@ if __name__ == '__main__':
     '''
 
     process_teachers(teacher_dataframes)
-
-
     print("finished getting reviews")
 
     for entry in debug:
         print(entry)
         print("\n")
+
+    '''
+    option = webdriver.EdgeOptions()
+    option.add_argument("--headless")
+    option.add_argument("log-level=3")
+    option.add_argument("--disable-extensions")
+    option.add_argument("--no-sandbox")
+    option.add_argument("--disable-gpu")
+    option.page_load_strategy = "eager"
+    driver = webdriver.Edge(options=option)
+    '''
