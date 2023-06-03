@@ -8,9 +8,10 @@ import threading
 
 
 debug = []
-teacher_dataframes = pd.DataFrame(columns=["link", "name", "school", "department","rating", "difficulty", "would_take_again"])
-review_dataframes = pd.DataFrame(columns=["link", "code","quality", "difficulty", "class", "text", "date", "for_credit", "attendance", "textbook", "would_take_again", "grade_received", "tags", "found_helpful", "found_unhelpful"])
+teacher_dataframes = pd.DataFrame(columns=[
+    "link", "name", "school", "department","rating", "difficulty", "would_take_again"])
 
+review_dataframes = pd.DataFrame(columns=['ID', 'Quality', 'Difficulty', 'Class Name', 5, 'Date Taken', 7])
 
 def get_university_teacher_list(university_id):
     counter = 0
@@ -145,18 +146,35 @@ def get_teacher_reviews(teacher_url, driver):
 
     '''
         THIS GETS THE TEXT FROM EACH REVIEW, WILL ADD EACH COMMENT TO A DATAFRAME, AND WILL BE TAGGED WITH THE TEACHER CODE
+        Note
+
+quality = [1]
+difficulty = [3]
+class = [4]
+slang = [6]
+date = [7]
+::: = [,,,] attendence, grade, would take again 
+comment = long string
+tags = ""
+helpful = [-2]
+unhelpful = [-1]
     '''
     ############################################# CREATING DATAFRAMES #############################################
     for list_element in review_list:
         # add the comment to the comment_dataframe
         text = list_element.text.split('\n')
-        try:
-            data = {'class': text[4], 'date': text[7], 'textbook': text[8], 'quality': text[1],
-                            'difficulty': text[3], 'would_take_again': text[5], 'comment': text[9], 'tags': text[10]}
-        except IndexError:
-            data = text
-        debug.append(text)
-        #review_dataframes.loc[len(review_dataframes)] = [text[4], text[7], text[8], text[1], text[3], text[5], text[9], text[10], teacher_url]
+
+        # get the longest string in text and store it in a variable
+        review_string = ""
+        for string in text:
+            if len(string) > len(review_string):
+                review_string = string
+
+        url = teacher_url.split("/")
+        url = url[len(url) - 1]
+
+        review_dataframes.loc[len(review_dataframes)] = [url, text[1], text[3], text[4],text[6], text[7], review_string] # add after daate
+
 
 def process_teachers(data): # teachers, a list of teacher objects
     option = webdriver.FirefoxOptions()
@@ -186,12 +204,13 @@ if __name__ == '__main__':
 
     print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
 
+    '''
     # split the dataframe into n chunks
     n = 2
     chunks = np.array_split(teacher_dataframes, n)
 
     # create a thread for each list
-    '''
+    
     threads = []
     for i in range(n):
         threads.append(threading.Thread(target=process_teachers, args=(chunks[i],)))
@@ -208,11 +227,13 @@ if __name__ == '__main__':
     process_teachers(teacher_dataframes)
     print("finished getting reviews")
 
-    for entry in debug:
-        print(entry)
-        print("\n")
+    review_dataframes.style.set_properties( **{'text-align': 'left'})
 
-    '''
+
+    print(review_dataframes.to_string())
+
+
+    ''' this is a copy of edge settings for easy copy paste
     option = webdriver.EdgeOptions()
     option.add_argument("--headless")
     option.add_argument("log-level=3")
