@@ -6,26 +6,37 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
 
+'''
+    get_university_teacher_list; returns a dataframe of teachers from a university, can be called by itself
+    process_teachers; takes a dataframe of teachers and returns a dataframe of reviews for each teacher, can be called by itself
+    get_teacher_reviews; returns a dataframe of reviews for a teacher, must be called by process_teachers
+'''
 
-debug = []
-teacher_dataframes = pd.DataFrame(columns=[
-    "link", "name", "school", "department","rating", "difficulty", "would_take_again"])
 
-review_dataframes = pd.DataFrame(columns=['ID', 'Quality', 'Difficulty', 'Class Name', 5, 'Date Taken', 7])
+def make_driver():
+    #option = webdriver.ChromeOptions()
+    option = webdriver.FirefoxOptions()
+    #option.add_argument("--headless")
+    #option.add_argument("log-level=3")
+    option.add_argument("--disable-extensions")
+    #option.page_load_strategy = "eager"
+    option.add_argument("--no-sandbox")
+    option.add_argument("--disable-gpu")
 
+    #driver = webdriver.Chrome(options=option)
+    driver = webdriver.Firefox(options=option)
+    driver.install_addon('uBlock.xpi', temporary=True)
+
+    return driver
 def get_university_teacher_list(university_id):
     counter = 0
     max_page_count = 1
-    max_teacher_count = 2
+    max_teacher_count = 5
 
-    option = webdriver.FirefoxOptions()
-    option.add_argument("--headless")
-    option.add_argument("log-level=3")
-    option.add_argument("--disable-extensions")
-    option.page_load_strategy = "eager"
-    option.add_argument("--no-sandbox")
-    option.add_argument("--disable-gpu")
-    driver = webdriver.Firefox(options=option)
+    teacher_dataframes = pd.DataFrame(columns=[
+        "link", "name", "school", "department", "rating", "difficulty", "would_take_again"])
+
+    driver = make_driver()
     print("driver created, getting page")
 
     '''
@@ -56,9 +67,10 @@ def get_university_teacher_list(university_id):
         if (button != None):
             # scroll unitl the button is in the middle of the screen
             driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", button)
+            #driver.set_window_position()
 
             button.click()
-            time.sleep(2)
+            time.sleep(1)
             counter += 1
             print("clicked show more button " + str(counter))
             if (counter >= max_page_count): # TESTING BREAK
@@ -96,10 +108,13 @@ def get_university_teacher_list(university_id):
         THIS CLOSES THE DRIVER, END OF FUNCTION
     '''
     driver.close()
-def get_teacher_reviews(teacher_url, driver):
+    return teacher_dataframes
+def get_teacher_reviews(teacher_url, review_frame ,driver):
     '''
         THIS GETS THE REVIEWS FOR EACH TEACHER
     '''
+
+
     driver.get(teacher_url)
     print("got page for", teacher_url)
 
@@ -142,75 +157,107 @@ def get_teacher_reviews(teacher_url, driver):
         if list_element.text == "":
             review_list.remove(list_element)
 
-    comments = []
+    exclude_words = ['QUALITY', 'DIFFICULTY', 'ENGL', 'ANY', 'ALL', 'HIST', 'HISTORY', 'VARIOUS']
 
     '''
         THIS GETS THE TEXT FROM EACH REVIEW, WILL ADD EACH COMMENT TO A DATAFRAME, AND WILL BE TAGGED WITH THE TEACHER CODE
-        Note
-
-quality = [1]
-difficulty = [3]
-class = [4]
-slang = [6]
-date = [7]
-::: = [,,,] attendence, grade, would take again 
-comment = long string
-tags = ""
-helpful = [-2]
-unhelpful = [-1]
     '''
     ############################################# CREATING DATAFRAMES #############################################
     for list_element in review_list:
         # add the comment to the comment_dataframe
         text = list_element.text.split('\n')
 
-        # get the longest string in text and store it in a variable
+        tags = []
         review_string = ""
+
+        # get stuf we know for sure
+        quality = text[1]
+        difficulty = text[3]
+        class_name = text[4]
+        date = text[5]
+
+        # loop through the text to find the things we need
         for string in text:
             if len(string) > len(review_string):
                 review_string = string
+            # if the string contains "Textbook" store it to variable
+            if "Textbook" in string:
+                textbook = string
+            else:
+                textbook = ""
+            # if the string contains "Attendance" store it to variable
+            if "Attendance" in string:
+                attendance = string
+            else:
+                attendance = ""
+            # if the string contains "Grade" store it to variable
+            if "Grade" in string:
+                grade = string
+            else:
+                grade = ""
+            # if the string contains "Would Take Again" store it to variable
+            if "Would Take Again" in string:
+                would_take_again = string
+            else:
+                would_take_again = ""
+            # if the string is in all caps and does not contain numbers, and is not in the exclude_words list, add it to the tags list
+            if string.isupper() and not any(char.isdigit() for char in string ) and not any(word in string for word in exclude_words):
+                tags.append(string)
+            # if the string contains "For Credit" store it to variable
+            if "For Credit" in string:
+                for_credit = string
+            else:
+                for_credit = ""
+
+        debug.append(text)
+
+
+
 
         url = teacher_url.split("/")
         url = url[len(url) - 1]
 
-        review_dataframes.loc[len(review_dataframes)] = [url, text[1], text[3], text[4],text[6], text[7], review_string] # add after daate
-
-
+        review_frame.loc[len(review_frame)] = [url, quality, difficulty, class_name,date,textbook,attendance,
+                                                         grade,would_take_again,for_credit, tags, review_string] # add after daate
 def process_teachers(data): # teachers, a list of teacher objects
-    option = webdriver.FirefoxOptions()
-    option.add_argument("--headless")
-    option.add_argument("log-level=3")
-    option.add_argument("--disable-extensions")
-    option.add_argument("--no-sandbox")
-    option.add_argument("--disable-gpu")
-    option.page_load_strategy = 'eager'
-    driver = webdriver.Firefox(options=option)
+    review_dataframes = pd.DataFrame(columns=['ID', 'Quality', 'Difficulty', 'Class_Name', 'Date_Taken', 'textbook',
+                                              'attendence', 'grade', 'take_again', 'credit', 'Tags', 'Comment'])
+
+    driver = make_driver()
     print("driver created, getting page")
 
     try:
-        # iterate through each row in the data dataframe and grab the contents of link column
-        # then add reviews for each teacher to the review dataframe
         for index, row in data.iterrows():
             teacher = row['link']
             print("getting reviews for", teacher)
-            get_teacher_reviews(teacher, driver)
+            try:
+                get_teacher_reviews(teacher, review_dataframes ,driver)
+            except Exception as e:
+                print("error getting reviews for", teacher, e)
     finally:
         driver.close()
+        review_dataframes.to_csv('./Data/review_dataframes.csv', index=False)
+        return review_dataframes
 
 
 if __name__ == '__main__':
-    get_university_teacher_list(946)
-    print(teacher_dataframes.to_string())
+    '''
+        running the program
+    '''
+    teacher_ratings = get_university_teacher_list(1596)
+    print(teacher_ratings.to_string())
 
-    print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
+    print("got teacher list ", len(teacher_ratings) , " gettting reviews")
+
+    #review_list = process_teachers(teacher_ratings)
 
     '''
+            THREADING
+    '''
     # split the dataframe into n chunks
-    n = 2
-    chunks = np.array_split(teacher_dataframes, n)
+    n = 4
+    chunks = np.array_split(teacher_ratings, n)
 
-    # create a thread for each list
-    
     threads = []
     for i in range(n):
         threads.append(threading.Thread(target=process_teachers, args=(chunks[i],)))
@@ -222,24 +269,13 @@ if __name__ == '__main__':
     # wait for the threads to finish
     for thread in threads:
         thread.join()
-    '''
 
-    process_teachers(teacher_dataframes)
     print("finished getting reviews")
 
-    review_dataframes.style.set_properties( **{'text-align': 'left'})
-
-
-    print(review_dataframes.to_string())
-
-
-    ''' this is a copy of edge settings for easy copy paste
-    option = webdriver.EdgeOptions()
-    option.add_argument("--headless")
-    option.add_argument("log-level=3")
-    option.add_argument("--disable-extensions")
-    option.add_argument("--no-sandbox")
-    option.add_argument("--disable-gpu")
-    option.page_load_strategy = "eager"
-    driver = webdriver.Edge(options=option)
     '''
+        EXPORTING DATAFRAMES
+    '''
+    #print(review_list.to_string())
+
+    teacher_ratings.to_csv('./Data/teacher_dataframes.csv', index=False)
+    # rocess_teachers exports its own dataframe, beacause it is threaded
