@@ -6,12 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import threading
 
-'''
-    get_university_teacher_list; returns a dataframe of teachers from a university, can be called by itself
-    process_teachers; takes a dataframe of teachers and returns a dataframe of reviews for each teacher, can be called by itself
-    get_teacher_reviews; returns a dataframe of reviews for a teacher, must be called by process_teachers
-'''
-
 teacher_dataframes = pd.DataFrame(columns=[
     "link", "name", "school", "department", "rating", "difficulty", "would_take_again"])
 review_dataframes = pd.DataFrame(columns=['ID', 'Quality', 'Difficulty', 'Class_Name', 'Date_Taken', 'textbook',
@@ -21,7 +15,7 @@ review_dataframes = pd.DataFrame(columns=['ID', 'Quality', 'Difficulty', 'Class_
 def make_driver():
     #option = webdriver.ChromeOptions()
     option = webdriver.FirefoxOptions()
-    #option.add_argument("--headless")
+    option.add_argument("--headless")
     #option.add_argument("log-level=3")
     option.add_argument("--disable-extensions")
     #option.page_load_strategy = "eager"
@@ -33,10 +27,12 @@ def make_driver():
     driver.install_addon('uBlock.xpi', temporary=True)
 
     return driver
+
+
 def get_university_teacher_list(university_id):
     counter = 0
-    max_page_count = 6
-    max_teacher_count = 50
+    max_page_count = 150
+    max_teacher_count = 5000
 
 
     driver = make_driver()
@@ -79,6 +75,8 @@ def get_university_teacher_list(university_id):
             if (counter >= max_page_count): # TESTING BREAK
                 break
 
+
+
         else:
             break
     print("finished loading page")
@@ -111,6 +109,8 @@ def get_university_teacher_list(university_id):
         THIS CLOSES THE DRIVER, END OF FUNCTION
     '''
     driver.close()
+
+
 def get_teacher_reviews(teacher_url, review_frame ,driver):
     '''
         THIS GETS THE REVIEWS FOR EACH TEACHER
@@ -205,6 +205,8 @@ def get_teacher_reviews(teacher_url, review_frame ,driver):
 
         review_dataframes.loc[len(review_dataframes)] = [url, quality, difficulty, class_name,date,textbook,attendance,
                                                          grade,would_take_again,for_credit, tags, review_string] # add after daate
+
+
 def process_teachers(data): # teachers, a list of teacher objects
     driver = make_driver()
     print("driver created, getting page")

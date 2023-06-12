@@ -23034,3 +23034,1075 @@ Port.onMessage event fired while context is inactive.
 1686577562670	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
 1686577564044	Marionette	INFO	Stopped listening on port 41205
 1686577565798	Marionette	INFO	Stopped listening on port 36459
+1686578181162	geckodriver	INFO	Listening on 127.0.0.1:35359
+1686578181166	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "50089" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiles4NIlp"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686578181469	Marionette	INFO	Marionette enabled
+1686578181473	Marionette	INFO	Listening on port 43061
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+WebDriver BiDi listening on ws://127.0.0.1:50089
+Read port: 43061
+1686578181879	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:50089/devtools/browser/a3e59701-95e0-4f61-91e6-92b7c2f0c320
+Port.onMessage event fired while context is inactive.
+1686578188100	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1686578456625	geckodriver	INFO	Listening on 127.0.0.1:47815
+1686578456629	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "41417" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebD3aAf"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686578456923	Marionette	INFO	Marionette enabled
+1686578456926	Marionette	INFO	Listening on port 38257
+Read port: 38257
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+WebDriver BiDi listening on ws://127.0.0.1:41417
+1686578457026	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:41417/devtools/browser/717e80e0-7817-4656-97e2-2fff8dd7522f
+Port.onMessage event fired while context is inactive.
+1686578465333	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1686578501581	Marionette	INFO	Stopped listening on port 38257
+1686578502618	geckodriver	INFO	Listening on 127.0.0.1:36499
+1686578502628	geckodriver	INFO	Listening on 127.0.0.1:39267
+1686578502629	geckodriver	INFO	Listening on 127.0.0.1:37473
+1686578502630	geckodriver	INFO	Listening on 127.0.0.1:57549
+1686578502633	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "32925" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegKRaPS"
+1686578502633	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "46479" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileMVeXRf"
+1686578502633	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "51347" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileKabi9K"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686578502970	Marionette	INFO	Marionette enabled
+1686578502971	Marionette	INFO	Marionette enabled
+1686578502974	Marionette	INFO	Listening on port 44903
+1686578502975	Marionette	INFO	Listening on port 39307
+1686578502989	Marionette	INFO	Marionette enabled
+1686578502994	Marionette	INFO	Listening on port 46039
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+Read port: 46039
+Read port: 44903
+Read port: 39307
+WebDriver BiDi listening on ws://127.0.0.1:46479
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+WebDriver BiDi listening on ws://127.0.0.1:51347
+1686578503086	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:32925
+1686578503108	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1686578503121	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "54189" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilev7QFLB"
+1686578503129	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686578503429	Marionette	INFO	Marionette enabled
+1686578503432	Marionette	INFO	Listening on port 42561
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+Read port: 42561
+WebDriver BiDi listening on ws://127.0.0.1:54189
+1686578503640	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: ({})
+console.error: ({})
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51347/devtools/browser/c9441d97-3495-4833-939d-61245fd7c2c3
+DevTools listening on ws://127.0.0.1:46479/devtools/browser/d31087b8-6583-4435-9ed9-ecd5d08a963d
+DevTools listening on ws://127.0.0.1:32925/devtools/browser/29d64fef-fc11-40c3-af2f-99e05241e524
+DevTools listening on ws://127.0.0.1:54189/devtools/browser/d0342c3d-c280-471d-b168-12733aad0932
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+1686578509630	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578510618	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578511421	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578512701	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578514496	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578514545	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578515074	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578516691	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578517158	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578518616	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578520179	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578520853	Marionette	INFO	Stopped listening on port 44903
+1686578521187	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578521538	Marionette	INFO	Stopped listening on port 39307
+1686578521776	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578522602	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578522845	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578523247	Marionette	INFO	Stopped listening on port 42561
+1686578525658	Marionette	INFO	Stopped listening on port 46039
+1686578572032	geckodriver	INFO	Listening on 127.0.0.1:33797
+1686578572036	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "37137" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYju1iP"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686578572334	Marionette	INFO	Marionette enabled
+1686578572338	Marionette	INFO	Listening on port 34361
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+WebDriver BiDi listening on ws://127.0.0.1:37137
+Read port: 34361
+1686578572721	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37137/devtools/browser/401b67b5-1d9e-41b2-81f3-d59347a56f6b
+1686578577323	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578593699	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578600325	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578602045	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1686578603761	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578605482	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578618302	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578620024	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578621743	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578623460	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578625176	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578626896	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578628610	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578630323	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578632040	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578642365	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1686578806749	Marionette	INFO	Stopped listening on port 34361
+1686578807459	geckodriver	INFO	Listening on 127.0.0.1:54189
+1686578807776	geckodriver	INFO	Listening on 127.0.0.1:58869
+1686578807802	geckodriver	INFO	Listening on 127.0.0.1:33259
+1686578807962	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "39931" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJb0rIu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686578808047	geckodriver	INFO	Listening on 127.0.0.1:50905
+1686578808262	Marionette	INFO	Marionette enabled
+1686578808265	Marionette	INFO	Listening on port 37471
+1686578808280	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "59427" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilefScxLl"
+*** You are running in headless mode.
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+1686578808306	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "56681" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHTAzBj"
+*** You are running in headless mode.
+WebDriver BiDi listening on ws://127.0.0.1:39931
+Read port: 37471
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686578808551	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "48117" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile81evLg"
+*** You are running in headless mode.
+1686578808612	Marionette	INFO	Marionette enabled
+1686578808615	Marionette	INFO	Listening on port 33539
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+1686578808680	Marionette	INFO	Marionette enabled
+Read port: 33539
+1686578808684	Marionette	INFO	Listening on port 38171
+WebDriver BiDi listening on ws://127.0.0.1:59427
+Read port: 38171
+1686578808732	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+1686578808762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:56681
+1686578808809	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1686578808889	Marionette	INFO	Marionette enabled
+1686578808892	Marionette	INFO	Listening on port 44391
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+Read port: 44391
+WebDriver BiDi listening on ws://127.0.0.1:48117
+1686578809021	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: ({})
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:39931/devtools/browser/080f3b64-1a56-4cca-983c-757af0f78cd6
+DevTools listening on ws://127.0.0.1:56681/devtools/browser/357b25a7-99d4-473f-96d7-3b2b7e14323e
+DevTools listening on ws://127.0.0.1:59427/devtools/browser/b55c26c8-497f-4052-841a-55874f373443
+DevTools listening on ws://127.0.0.1:48117/devtools/browser/65e15961-c581-4bb0-8ccf-507ae940f841
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+1686578815134	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578815147	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578816477	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578816873	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578816981	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578818137	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578818284	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578819124	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578819378	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578821059	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578821608	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578822108	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578822484	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578823215	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578823748	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578824172	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578824199	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578825405	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578825896	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578826078	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578826285	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578826871	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578827057	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578827850	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578828494	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+Port.onMessage event fired while context is inactive.
+1686578829349	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578829623	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578830769	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578831090	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578831860	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578832650	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578833562	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578836549	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578837136	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578837634	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1686578838763	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1686578839882	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578840377	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578842212	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578842548	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578843278	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578844156	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578845478	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578845991	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578846122	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578848595	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578848730	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578849530	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578851337	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578851816	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578852628	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578853539	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578853947	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578854527	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578854536	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578855439	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578855851	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578856995	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578858501	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578859139	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578859346	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578860719	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578861637	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578861847	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578862967	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578863151	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578864320	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578864508	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578865494	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578865928	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578866882	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578866949	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578867379	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578867900	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578868915	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578869430	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578869844	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578871059	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578871813	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578871936	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578872005	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578872841	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578873369	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578873861	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578874023	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578874603	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578875308	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578876478	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578876846	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578876867	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578878236	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578878952	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578880108	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578880855	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578880887	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578881628	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578881965	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578882228	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578882879	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578884119	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578884747	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578886527	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578886697	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578886721	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: resource://gre/actors/ContentMetaChild.sys.mjs, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1686578887110	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578887476	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578888448	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578889136	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578889281	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578889377	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578890616	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578890679	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578891464	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578892221	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578892956	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578893381	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578893813	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578894228	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578894733	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578895431	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578896355	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578896993	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578897738	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578897825	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578897985	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578898329	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578899823	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578901084	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578901345	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578902039	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578902329	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578902342	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578903481	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578903597	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578903796	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578906276	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578906533	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578907072	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578907591	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578908332	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578908712	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578909551	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578910563	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578910836	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578911057	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578911978	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578913134	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578913286	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578914402	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578914632	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578915685	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578915933	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578916871	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578917000	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578918113	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578918284	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578920006	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578920270	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578921173	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578921266	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578922154	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578924217	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578924350	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578925268	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578926858	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: resource://gre/actors/ContentMetaChild.sys.mjs, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1686578927676	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578930045	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578930977	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578931499	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578931705	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578932141	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578932709	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578932933	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578934236	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578934693	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578935097	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578935113	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578936938	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578937863	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578938316	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578938401	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578940693	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578940835	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578940865	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578942549	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578944707	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578945030	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578945110	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578946055	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578946436	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578948262	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578948500	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578948910	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578949039	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578949943	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578950505	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578950755	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578951951	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578952062	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578952975	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578953748	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578955214	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578956016	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578956619	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578957052	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578958372	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578958385	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578958950	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578959370	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578962261	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578962436	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578963357	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578963677	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578964521	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578964731	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578967948	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578971582	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578971760	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578971965	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578972032	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578973124	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578973132	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578974914	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578975225	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578975397	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578976331	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578976566	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578976654	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578976656	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578977678	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578978056	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578978371	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578978955	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578980601	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578983631	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578984074	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578985984	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578986437	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578986572	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578987007	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578987626	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686578988222	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578988248	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578988371	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578989542	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578989732	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578990076	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578991109	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578991626	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578992865	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578993400	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578995332	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578996175	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578997820	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578998196	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578998370	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686578999168	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579000093	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579001662	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579003548	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579003792	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579004451	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579004499	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579005541	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579006079	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579006457	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579007425	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579007543	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579008585	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579008847	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579010575	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579010867	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579011186	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579011646	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579012629	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579012652	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579012897	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579013747	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579013851	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579014811	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579016186	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579016321	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579016491	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579017848	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579018260	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579018448	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579018588	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579020243	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579020849	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579021031	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579022293	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579022388	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579022954	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579023419	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579023480	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579024300	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579024435	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579024675	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579025706	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579026194	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579028219	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579028429	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579029938	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579030713	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579031381	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579032528	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579033082	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579035421	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579035642	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579036035	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579037075	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579037203	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579038031	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579038443	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579039839	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579040937	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579041619	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579042490	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579043754	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579043975	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579044072	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579045241	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579045438	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579045949	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579046130	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579047259	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579048185	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579048213	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579048831	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579049526	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579051480	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579051961	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579052407	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579053515	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579055425	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579056445	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579056561	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579057655	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579057976	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579058397	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579058464	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579059251	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579060112	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579060148	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579060561	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579061809	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579062960	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579063126	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579063997	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579064333	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579064826	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579066072	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579066683	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579067769	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579068159	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579068232	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579069720	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579070842	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579071017	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579071095	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579071827	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579072493	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579074338	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579074497	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579074971	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579075135	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579075881	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579076366	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579076651	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579076680	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579077930	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579079059	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579079477	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579079724	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579079774	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579080832	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579081654	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579083796	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579083885	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579084268	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579085170	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579085199	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579085533	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579086882	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579087353	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579087902	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579088080	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579088370	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579088654	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579089346	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579090591	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579090823	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579090913	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579091644	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579093280	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579094628	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579095689	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579096037	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579096251	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579097032	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579098299	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579098405	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579098837	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579100637	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579101472	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579102620	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579102672	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579102711	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579103095	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579103660	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579105368	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579105920	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579107121	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579108003	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579109458	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579110156	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579111054	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579111095	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579111816	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579112234	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579113094	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579114366	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579114696	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579114858	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579115222	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579115719	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579116110	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579116617	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579117651	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579118447	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579118552	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579118978	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579120531	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579121123	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579122584	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579123167	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579123579	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579123941	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579124505	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579125690	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579126221	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579126399	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579127701	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579128597	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579128695	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579130201	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579130214	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579130597	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579130777	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579131644	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579131733	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579132209	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579132730	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579132938	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579133498	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579134500	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579134550	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579134624	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579135489	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579136566	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579137269	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579137780	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579139520	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579139864	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579140965	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579141301	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579143165	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579144663	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579145335	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579146020	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579146470	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579147868	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579148797	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579149439	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579150858	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579151652	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579151797	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579153237	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579154355	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579154704	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579156183	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579157480	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579157879	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579159812	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579160668	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579160988	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579161197	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579161749	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579163352	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579163390	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579164632	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579164819	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579165086	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579165815	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579167897	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579167951	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579168342	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579171049	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579171050	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579171232	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579172148	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579172347	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579172805	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579173096	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579173283	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579173963	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579174089	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579175315	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579175911	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579176990	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579177286	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579177571	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579178885	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579179572	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579180032	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579181105	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579181124	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579181458	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579182177	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579184284	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579184950	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579185099	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579185467	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579186547	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579186652	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579186786	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579187550	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579187743	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579188448	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579188584	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579189373	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579189838	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579189980	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579190819	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579190863	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579191277	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579193449	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579193577	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579193852	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579194017	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579195511	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579195896	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579195990	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579196784	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579197043	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579197143	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579198621	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579198736	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579198922	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579200463	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579200672	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579202009	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579202320	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579202960	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579204434	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579205951	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579206086	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579206739	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579206990	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579207171	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579208176	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579208990	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579209389	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579209524	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579210526	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579210772	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579211516	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579213895	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579214003	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579216044	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579216422	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579217609	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579217736	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579218270	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579218442	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579219483	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579219904	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579220518	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579220667	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579221109	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579223010	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579223787	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579224969	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579225554	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579225894	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579227565	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579228015	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579228037	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579228054	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579228893	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579228931	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579229942	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579229988	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579232252	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579232857	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579233248	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579233978	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579235784	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579236517	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579237270	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579237616	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579237975	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579238758	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579239803	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579240522	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579240787	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579242034	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579242415	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579242916	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579243810	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579244492	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579245193	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579247049	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579247174	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579247212	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579248257	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579248749	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579249777	Marionette	INFO	Stopped listening on port 33539
+1686579249907	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579250556	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579251342	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579252668	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579254026	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579254403	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579255525	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579255609	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579255992	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579257353	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579257870	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579259434	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579260575	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579262290	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579262804	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579264251	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579265003	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686579267353	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579268569	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579269047	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579270316	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579272089	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579272452	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579273201	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579274415	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579275212	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579275503	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579275557	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579276773	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579277200	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579277771	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579277971	Marionette	INFO	Stopped listening on port 38171
+1686579279049	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579279382	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579281643	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579283971	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579284143	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579285575	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579287064	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579287179	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579288173	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579291476	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579293944	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579293947	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579295330	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579295368	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579297619	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579298815	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579298875	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579299854	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579300706	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579303885	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579304891	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579305166	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579306666	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579307608	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579307945	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579309213	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579313700	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579314202	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579315474	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579315985	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579316851	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579317871	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579320774	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579322177	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579323216	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579323425	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579324241	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579326999	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579327129	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579328140	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579328583	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579329879	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579331462	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579331639	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579333353	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579333424	Marionette	INFO	Stopped listening on port 44391
+1686579334499	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579335880	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579339936	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579342754	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579343782	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579345703	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579348321	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579350151	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579352619	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579354370	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579358378	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579360996	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579362709	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579364235	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579366369	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579369378	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579370314	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579372723	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579374170	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579385942	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579387236	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579388718	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579394322	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579396006	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579399903	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579401852	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579406058	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579408637	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579409594	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: resource://gre/actors/ContentMetaChild.sys.mjs, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1686579411257	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579414843	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579416711	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579417718	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: resource://gre/actors/ContentMetaChild.sys.mjs, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1686579419033	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579420202	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579421274	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579422548	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579425846	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579429062	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579431604	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579441465	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579442262	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579443053	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579444050	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579445300	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579447202	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579451409	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579453335	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579459366	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579460737	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579465161	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579467093	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579470850	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579471951	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579484129	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579504585	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579515744	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579516616	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579517782	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579523321	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579525720	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579526608	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579528041	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579531561	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579533694	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579535428	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579537969	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579539024	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579540823	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579542604	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579544985	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579545899	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579547626	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579550566	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579553363	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579555315	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579558565	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579563423	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579565268	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579573736	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579574937	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579576056	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579577736	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579580200	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686579585213	Marionette	INFO	Stopped listening on port 37471
