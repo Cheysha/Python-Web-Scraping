@@ -24284,3 +24284,184 @@ Port.onMessage event fired while context is inactive.
 1686611462538	Marionette	INFO	Stopped listening on port 40523
 1686611463532	Marionette	INFO	Stopped listening on port 46267
 1686611467871	Marionette	INFO	Stopped listening on port 37663
+1686612584724	geckodriver	INFO	Listening on 127.0.0.1:33053
+1686612584730	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "42827" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile4d7I80"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686612585236	Marionette	INFO	Marionette enabled
+1686612585242	Marionette	INFO	Listening on port 44013
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+Read port: 44013
+WebDriver BiDi listening on ws://127.0.0.1:42827
+1686612585405	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42827/devtools/browser/24bfc0f2-c41a-4b19-9018-db67b364cdf6
+Port.onMessage event fired while context is inactive.
+1686612592434	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686612593812	Marionette	INFO	Stopped listening on port 44013
+1686612595182	geckodriver	INFO	Listening on 127.0.0.1:59703
+1686612595183	geckodriver	INFO	Listening on 127.0.0.1:45367
+1686612595188	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "39009" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLq2Zg8"
+1686612595188	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "42913" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNoB0uv"
+*** You are running in headless mode.
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686612595623	geckodriver	INFO	Listening on 127.0.0.1:37303
+1686612595633	geckodriver	INFO	Listening on 127.0.0.1:45089
+1686612595695	Marionette	INFO	Marionette enabled
+1686612595698	Marionette	INFO	Marionette enabled
+1686612595700	Marionette	INFO	Listening on port 42797
+1686612595704	Marionette	INFO	Listening on port 38237
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+Read port: 38237
+Read port: 42797
+WebDriver BiDi listening on ws://127.0.0.1:42913
+WebDriver BiDi listening on ws://127.0.0.1:39009
+1686612595874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1686612595876	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1686612596129	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "45659" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2DNBXg"
+1686612596139	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "39089" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile88TYEu"
+*** You are running in headless mode.
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686612596762	Marionette	INFO	Marionette enabled
+1686612596770	Marionette	INFO	Listening on port 43507
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1686612596795	Marionette	INFO	Marionette enabled
+1686612596802	Marionette	INFO	Listening on port 37867
+Read port: 43507
+Read port: 37867
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: ({})
+WebDriver BiDi listening on ws://127.0.0.1:45659
+WebDriver BiDi listening on ws://127.0.0.1:39089
+console.error: ({})
+1686612596983	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1686612597010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: ({})
+DevTools listening on ws://127.0.0.1:39009/devtools/browser/7623ff9f-cd7e-40c3-9998-d92292ceac02
+DevTools listening on ws://127.0.0.1:42913/devtools/browser/29d73d03-f890-4c73-b904-c3ecc78d3bb2
+DevTools listening on ws://127.0.0.1:45659/devtools/browser/d40f5047-a5f4-41a3-8b0d-8ef3fd87f678
+DevTools listening on ws://127.0.0.1:39089/devtools/browser/1c9b6ca8-3ddb-4fcc-85fa-2aafa16f3934
+1686612600203	Marionette	INFO	Stopped listening on port 37867
+console.error: services.settings: 
+  main/quicksuggest Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 111))
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 111))
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 111))
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+1686612603439	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686612603477	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686612603681	Marionette	INFO	Stopped listening on port 42797
+1686612604420	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686612605091	Marionette	INFO	Stopped listening on port 38237
+1686612610403	Marionette	INFO	Stopped listening on port 43507
+1686613111227	geckodriver	INFO	Listening on 127.0.0.1:33521
+1686613111233	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "42063" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHvgL0w"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686613111713	Marionette	INFO	Marionette enabled
+1686613111718	Marionette	INFO	Listening on port 36663
+Read port: 36663
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+WebDriver BiDi listening on ws://127.0.0.1:42063
+1686613111888	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42063/devtools/browser/7be1ccf8-7177-404a-9207-5428264c21ae
+Port.onMessage event fired while context is inactive.
+1686613118312	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686613119837	Marionette	INFO	Stopped listening on port 36663
+1686613121124	geckodriver	INFO	Listening on 127.0.0.1:47791
+1686613121630	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "39369" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileadQLes"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686613121765	geckodriver	INFO	Listening on 127.0.0.1:58679
+1686613121781	geckodriver	INFO	Listening on 127.0.0.1:53349
+1686613121798	geckodriver	INFO	Listening on 127.0.0.1:40343
+1686613122118	Marionette	INFO	Marionette enabled
+1686613122123	Marionette	INFO	Listening on port 40281
+Read port: 40281
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+WebDriver BiDi listening on ws://127.0.0.1:39369
+1686613122270	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "42981" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesjNxYU"
+1686613122286	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "52407" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyK7Eas"
+1686613122296	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+*** You are running in headless mode.
+1686613122304	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... pu" "--remote-debugging-port" "43405" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTZ2vsA"
+*** You are running in headless mode.
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686613122824	Marionette	INFO	Marionette enabled
+1686613122831	Marionette	INFO	Listening on port 43529
+1686613122864	Marionette	INFO	Marionette enabled
+Read port: 43529
+1686613122872	Marionette	INFO	Listening on port 34759
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+Read port: 34759
+WebDriver BiDi listening on ws://127.0.0.1:42981
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+1686613122979	Marionette	INFO	Marionette enabled
+1686613122988	Marionette	INFO	Listening on port 43793
+1686613123038	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:43405
+Read port: 43793
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+1686613123122	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WebDriver BiDi listening on ws://127.0.0.1:52407
+1686613123215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.error: ({})
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:39369/devtools/browser/6b15e333-a12b-4730-94fb-8ec60860d213
+DevTools listening on ws://127.0.0.1:43405/devtools/browser/31558469-e350-4809-8ff1-6d222c4855bd
+DevTools listening on ws://127.0.0.1:42981/devtools/browser/b270bb50-c3c2-4b03-84e5-113d1d165230
+DevTools listening on ws://127.0.0.1:52407/devtools/browser/6bd0a242-6692-441d-928d-ad540ae6c096
+1686613126206	Marionette	INFO	Stopped listening on port 34759
+JavaScript error: resource://services-settings/Utils.sys.mjs, line 229: TypeError: NetworkError: Network request failed
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+Port.onMessage event fired while context is inactive.
+1686613129987	Marionette	INFO	Stopped listening on port 40281
+1686613130615	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686613130829	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1686613132019	Marionette	INFO	Stopped listening on port 43793
+1686613135364	Marionette	INFO	Stopped listening on port 43529
