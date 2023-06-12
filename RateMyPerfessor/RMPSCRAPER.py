@@ -138,17 +138,14 @@ def get_teacher_reviews(teacher_url, review_frame, driver):
         review_list = []
         print("no reviews found for", teacher_url)
 
-    # remove empty elements
-    for list_element in review_list:
-        if list_element.text == "":
-            review_list.remove(list_element)
-
-    exclude_words = ['QUALITY', 'DIFFICULTY', 'ANY', 'ALL']  # words to ignore while were looping
+    # words to ignore while were looping
+    exclude_words = ['QUALITY', 'DIFFICULTY', 'ANY', 'ALL']
 
     # loop through the reviews, and add them to the dataframe
     for list_element in review_list:
-
-        # setup, and get the stuff we know
+        if list_element.text == "":
+            review_list.remove(list_element)
+            continue
         text = list_element.text.split('\n')
         tags = []
         review_string = ""
