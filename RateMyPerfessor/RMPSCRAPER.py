@@ -52,22 +52,18 @@ def get_university_teacher_list(university_id):
     while True:
         try:
             button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[4]/div[1]/div[1]/div[4]/button")
-        except NoSuchElementException:
-            button = None
-
-        if (button != None):
             # scroll unitl the button is in the middle of the screen
             driver.execute_script("arguments[0].scrollIntoView({ block: 'center', inline: 'center'})", button)
-            # driver.set_window_position()
-
             button.click()
             time.sleep(1)
             counter += 1
             print("clicked show more button " + str(counter))
             if (counter >= max_page_count):  # TESTING BREAK
                 break
-        else:
+        except NoSuchElementException:
             break
+
+
     print("finished loading page")
 
     # now that we've loaded all teachers on page, Scrape the page for teachers
