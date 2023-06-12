@@ -12,6 +12,11 @@ import threading
     get_teacher_reviews; returns a dataframe of reviews for a teacher, must be called by process_teachers
 '''
 
+teacher_dataframes = pd.DataFrame(columns=[
+    "link", "name", "school", "department", "rating", "difficulty", "would_take_again"])
+review_dataframes = pd.DataFrame(columns=['ID', 'Quality', 'Difficulty', 'Class_Name', 'Date_Taken', 'textbook',
+                                          'attendence', 'grade', 'take_again', 'credit', 'Tags', 'Comment'])
+
 
 def make_driver():
     #option = webdriver.ChromeOptions()
@@ -30,11 +35,9 @@ def make_driver():
     return driver
 def get_university_teacher_list(university_id):
     counter = 0
-    max_page_count = 1
-    max_teacher_count = 5
+    max_page_count = 6
+    max_teacher_count = 50
 
-    teacher_dataframes = pd.DataFrame(columns=[
-        "link", "name", "school", "department", "rating", "difficulty", "would_take_again"])
 
     driver = make_driver()
     print("driver created, getting page")
@@ -108,13 +111,10 @@ def get_university_teacher_list(university_id):
         THIS CLOSES THE DRIVER, END OF FUNCTION
     '''
     driver.close()
-    return teacher_dataframes
 def get_teacher_reviews(teacher_url, review_frame ,driver):
     '''
         THIS GETS THE REVIEWS FOR EACH TEACHER
     '''
-
-
     driver.get(teacher_url)
     print("got page for", teacher_url)
 
@@ -177,52 +177,35 @@ def get_teacher_reviews(teacher_url, review_frame ,driver):
         date = text[5]
 
         # loop through the text to find the things we need
+        textbook, attendance, grade, would_take_again = "", "", "", ""
         for string in text:
             if len(string) > len(review_string):
                 review_string = string
-            # if the string contains "Textbook" store it to variable
+
             if "Textbook" in string:
-                textbook = string
-            else:
-                textbook = ""
-            # if the string contains "Attendance" store it to variable
+                textbook = string.split(":")[1]
+
             if "Attendance" in string:
-                attendance = string
-            else:
-                attendance = ""
-            # if the string contains "Grade" store it to variable
+                attendance = string.split(":")[1]
+
             if "Grade" in string:
-                grade = string
-            else:
-                grade = ""
-            # if the string contains "Would Take Again" store it to variable
+                grade = string.split(":")[1]
+
             if "Would Take Again" in string:
-                would_take_again = string
-            else:
-                would_take_again = ""
-            # if the string is in all caps and does not contain numbers, and is not in the exclude_words list, add it to the tags list
-            if string.isupper() and not any(char.isdigit() for char in string ) and not any(word in string for word in exclude_words):
-                tags.append(string)
-            # if the string contains "For Credit" store it to variable
+                would_take_again = string.split(":")[1]
+
             if "For Credit" in string:
-                for_credit = string
-            else:
-                for_credit = ""
+                for_credit = string.split(":")[1]
 
-        debug.append(text)
-
-
-
+            if string.isupper() and not any(word in string for word in exclude_words) and not string == class_name:
+                tags.append(string)
 
         url = teacher_url.split("/")
         url = url[len(url) - 1]
 
-        review_frame.loc[len(review_frame)] = [url, quality, difficulty, class_name,date,textbook,attendance,
+        review_dataframes.loc[len(review_dataframes)] = [url, quality, difficulty, class_name,date,textbook,attendance,
                                                          grade,would_take_again,for_credit, tags, review_string] # add after daate
 def process_teachers(data): # teachers, a list of teacher objects
-    review_dataframes = pd.DataFrame(columns=['ID', 'Quality', 'Difficulty', 'Class_Name', 'Date_Taken', 'textbook',
-                                              'attendence', 'grade', 'take_again', 'credit', 'Tags', 'Comment'])
-
     driver = make_driver()
     print("driver created, getting page")
 
@@ -236,8 +219,6 @@ def process_teachers(data): # teachers, a list of teacher objects
                 print("error getting reviews for", teacher, e)
     finally:
         driver.close()
-        review_dataframes.to_csv('./Data/review_dataframes.csv', index=False)
-        return review_dataframes
 
 
 if __name__ == '__main__':
@@ -245,9 +226,9 @@ if __name__ == '__main__':
         running the program
     '''
     teacher_ratings = get_university_teacher_list(1596)
-    print(teacher_ratings.to_string())
+    print(teacher_dataframes.to_string())
 
-    print("got teacher list ", len(teacher_ratings) , " gettting reviews")
+    print("got teacher list ", len(teacher_dataframes) , " gettting reviews")
 
     #review_list = process_teachers(teacher_ratings)
 
@@ -256,7 +237,7 @@ if __name__ == '__main__':
     '''
     # split the dataframe into n chunks
     n = 4
-    chunks = np.array_split(teacher_ratings, n)
+    chunks = np.array_split(teacher_dataframes, n)
 
     threads = []
     for i in range(n):
@@ -275,7 +256,8 @@ if __name__ == '__main__':
     '''
         EXPORTING DATAFRAMES
     '''
-    #print(review_list.to_string())
+    print(review_dataframes.to_string())
 
-    teacher_ratings.to_csv('./Data/teacher_dataframes.csv', index=False)
+    teacher_dataframes.to_csv('./Data/teacher_dataframes.csv', index=False)
+    review_dataframes.to_csv('./Data/review_dataframes.csv', index=False)
     # rocess_teachers exports its own dataframe, beacause it is threaded
