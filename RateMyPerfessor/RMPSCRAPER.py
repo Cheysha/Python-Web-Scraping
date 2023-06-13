@@ -57,10 +57,10 @@ def get_university_teacher_list(university_id):
     print("got page + " + url)
 
     # Close cookie warning if it exists
-    if len(driver.find_elements(By.XPATH, "/html/body/div[5]/div/div/button")) > 0:
-        print("closed cookie warning")
+    try:
         driver.find_element(By.XPATH, "/html/body/div[5]/div/div/button").click()
-    else:
+        print("closed cookie warning")
+    except NoSuchElementException:
         print("no cookie warning found")
 
     # Click show more button until there are no more pages, or until the max page count is reached
@@ -178,7 +178,7 @@ def get_teacher_reviews(teacher_url, review_frame, driver):
         review_dataframes.loc[len(review_dataframes)] = [url, quality, difficulty, class_name, date, textbook,
                                                          attendance,
                                                          grade, would_take_again, for_credit, tags,
-                                                         review_string]  # add after daate
+                                                         review_string]
 
 
 if __name__ == '__main__':
