@@ -47,8 +47,8 @@ def get_university_teacher_list(university_id):
     # Create Driver and setup
     driver = make_driver()
     counter = 0
-    max_page_count = 1
-    max_teacher_count = 3
+    max_page_count = 70
+    max_teacher_count = 300
 
     # Get page
     url = f"https://www.ratemyprofessors.com/search/professors/{university_id}?q=*"
@@ -183,7 +183,7 @@ def get_teacher_reviews(teacher_url, review_frame, driver):
 
 if __name__ == '__main__':
     # get the initial teacher dataframes that we will need to pass into the threads, pass the school id
-    school_id = 1596
+    school_id = 2932
     teacher_ratings = get_university_teacher_list(school_id)
     print(teacher_dataframes.to_string())
     print("got teacher list ", len(teacher_dataframes), " gettting reviews")
